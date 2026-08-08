@@ -26,7 +26,8 @@ const OUT = join(root, "dist");
 const config = JSON.parse(await readFile(join(root, "site.config.json"), "utf8"));
 const { site, business, forms, analytics, serviceArea, services, differentiators, faq, materials } = config;
 const reviews = config.reviews.items;
-const gallery = config.gallery.items;
+const projects = config.gallery.projects ?? [];
+const allPhotos = projects.flatMap((p) => p.photos.map((ph) => ({ ...ph, project: p })));
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -179,23 +180,45 @@ const reviewCards = reviews.length
           the single most useful thing you can do for a small local shop.
         </p>`;
 
-const galleryItems = gallery.length
-  ? gallery
-      .map(
-        (g) => `
+/** One photo. `eager` skips lazy-loading for the few above the fold. */
+const shot = (g, eager = false) => `
         <figure class="shot">
           <img src="${esc(url("assets/img/gallery/" + g.src))}" alt="${esc(g.alt)}"
-               loading="lazy" decoding="async"
+               ${eager ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"'} decoding="async"
                width="${esc(g.width ?? 1600)}" height="${esc(g.height ?? 1200)}">
           ${g.caption ? `<figcaption>${esc(g.caption)}</figcaption>` : ""}
-        </figure>`,
-      )
-      .join("\n")
-  : `
+        </figure>`;
+
+const emptyGallery = `
         <p class="empty-state">
           Project photos are on the way. In the meantime, call for references and
           recent work in your town.
         </p>`;
+
+// Full gallery page: grouped by job, because someone deciding whether to call
+// wants to see one kitchen from several angles, not forty unrelated counters.
+const galleryProjects = projects.length
+  ? projects
+      .map(
+        (p, i) => `
+      <section class="project">
+        <header class="project-head">
+          <h2>${esc(p.title)}</h2>
+          <p class="project-meta">${[p.location, p.material].filter(Boolean).map(esc).join(" &middot; ")}</p>
+          ${p.blurb ? `<p class="project-blurb">${esc(p.blurb)}</p>` : ""}
+        </header>
+        <div class="gallery-grid">
+          ${p.photos.map((g) => shot(g, i === 0)).join("\n")}
+        </div>
+      </section>`,
+      )
+      .join("\n")
+  : emptyGallery;
+
+// Home page: the lead photo from each job, so the strip reads as range of work.
+const galleryPreview = projects.length
+  ? projects.map((p) => shot(p.photos[0])).join("\n")
+  : emptyGallery;
 
 const hoursRows = b.hours
   .map(
@@ -426,7 +449,8 @@ for (const page of pages) {
       areaSentence: esc(serviceAreaSentence),
       faq: faqBlocks,
       reviews: reviewCards,
-      gallery: galleryItems,
+      gallery: galleryPreview,
+      galleryProjects,
       hours: hoursRows,
       schema: (page.schema ?? [localBusinessSchema]).map(jsonLd).join("\n  "),
       analytics: analytics.plausibleDomain
@@ -488,7 +512,8 @@ if (todos.length) {
 }
 
 if (!reviews.length) console.log("   note: reviews list is empty (see reviews/ page CTA)");
-if (!gallery.length) console.log("   note: gallery is empty — real project photos matter more than any copy on this site");
+if (!projects.length) console.log("   note: gallery is empty — real project photos matter more than any copy on this site");
+else console.log(`   ${projects.length} projects, ${allPhotos.length} photos in the gallery`);
 
 if (process.argv.includes("--serve")) {
   const { createServer } = await import("node:http");

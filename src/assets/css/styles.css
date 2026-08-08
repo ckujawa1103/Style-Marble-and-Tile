@@ -298,9 +298,26 @@ p + p { margin-top: 1rem; }
 /* --- gallery -------------------------------------------------------------- */
 
 .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; }
-.shot { margin: 0; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
-.shot img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.shot {
+  margin: 0; background: var(--paper);
+  border: 1px solid var(--line); border-radius: var(--radius);
+  overflow: hidden;
+}
+/* Square crop: the photos come from a phone in a mix of portrait and landscape,
+   and a uniform ratio is the only way the grid does not look like a jumble. */
+.shot img { width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; display: block; }
 .shot figcaption { padding: .75rem 1rem; font-size: .88rem; color: var(--slate); }
+
+.projects > .project { padding-block: clamp(2.5rem, 6vw, 4rem); }
+.projects > .project + .project { border-top: 1px solid var(--line); }
+.project-head { max-width: 62ch; margin-bottom: 1.75rem; }
+.project-head h2 { margin-bottom: .3rem; }
+.project-meta {
+  font-size: .78rem; font-weight: 700; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--bronze);
+  margin-bottom: .85rem;
+}
+.project-blurb { color: var(--slate); }
 
 /* --- reviews -------------------------------------------------------------- */
 

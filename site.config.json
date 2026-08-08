@@ -31,8 +31,8 @@
     "tagline": "A full-service marble, granite, and quartz fabricator on the East End.",
     "intro": "Style Marble and Tile is a hard-surface fabrication shop and tile showroom in Hampton Bays. We cut and install kitchen countertops, vanity tops, backsplashes, fireplaces, pool coping, and BBQ counters in marble, granite, quartz, limestone, onyx, bluestone, and solid surface — and we carry the tile to go with them.",
 
-    "_founded_note": "Directory listings say the shop started in 1987, but their own copy has said 'in business 30 years' for a while. Confirm the real year and put it here — an accurate 'since XXXX' is a strong trust signal. Left blank so nothing wrong gets published.",
-    "founded": "",
+    "_founded_note": "Confirmed from the business's own Facebook bio: 'has been in business since 1987'. The 'in business 30 years' line on some directory listings is just stale copy.",
+    "founded": "1987",
 
     "_license_note": "The shop is licensed and insured — confirmed by the owner. This field is just the licence NUMBER, which is displayed in the footer when present. Ask for it: a visible number converts skeptical homeowners better than the word 'licensed' alone.",
     "licenseNumber": "",
@@ -162,10 +162,10 @@
       "summary": "Surrounds, hearths, thresholds, sills, and cut-to-size one-offs.",
       "description": "Hard-surface dimensional fabrication for the pieces that do not come off a shelf. Some of it is machine work and some of it is hand work — the delicate trim pieces get cut by hand because a machine cannot do them.",
       "bullets": [
+        "Custom sinks and basins carved from the slab",
         "Fireplace surrounds and hearths",
-        "Custom trim pieces cut by hand",
-        "Thresholds, saddles, and window sills",
-        "Table tops, bar tops, and cut-to-size slab"
+        "Interior slab walls, floors, and ceilings",
+        "Thresholds, saddles, sills, table tops, and bar tops"
       ]
     },
     {
@@ -247,12 +247,76 @@
 
   "gallery": {
     "_comment": [
-      "Drop photos into src/assets/img/gallery/ and list them here.",
-      "The Facebook page already has project photos — pulling the best dozen across",
-      "is the single highest-value thing you can add to this site.",
-      "Write a real 'alt' for each: it is what a screen reader announces and what",
-      "Google Images indexes."
+      "Photos are grouped by job, because a visitor deciding whether to call wants",
+      "to see one kitchen from four angles, not forty unrelated countertops.",
+      "",
+      "To add a job: run `npm run photos <folder>` to resize and strip EXIF, then",
+      "add a project block below. Every 'alt' should describe what is actually in",
+      "the frame — it is read aloud by screen readers and indexed by Google Images.",
+      "",
+      "These twenty came off the Facebook page in August 2026."
     ],
-    "items": []
+    "projects": [
+      {
+        "title": "Sag Harbor kitchen and pantry",
+        "location": "Sag Harbor",
+        "material": "Calacatta Paonazzo marble",
+        "blurb": "Island, counters, a full-height slab backsplash, and a matching fireplace surround, all cut from the same Calacatta Paonazzo so the veining carries through the room.",
+        "photos": [
+          { "src": "sag-harbor-marble-island.jpg", "width": 720, "height": 900, "alt": "Calacatta Paonazzo marble island with an integrated sink in a Sag Harbor kitchen, with a matching slab backsplash behind the range" },
+          { "src": "sag-harbor-slab-backsplash.jpg", "width": 576, "height": 720, "alt": "Full-height Calacatta Paonazzo slab backsplash behind a brass-trimmed range, with a pot filler set into the stone" },
+          { "src": "sag-harbor-marble-fireplace.jpg", "width": 687, "height": 858, "alt": "Calacatta Paonazzo marble fireplace surround and hearth with a herringbone brick firebox" }
+        ]
+      },
+      {
+        "title": "A vanity cut from one slab",
+        "location": "In the Hampton Bays shop",
+        "material": "Quartzite",
+        "blurb": "Mitred on every corner so the veining runs unbroken around the piece, with the basin carved straight into the top and the drawer faced in the same stone.",
+        "photos": [
+          { "src": "stone-vanity-integral-basin.jpg", "width": 1440, "height": 1440, "alt": "A rectangular basin carved directly into a stone vanity top on the fabrication shop floor" },
+          { "src": "stone-vanity-drawer.jpg", "width": 1440, "height": 1440, "alt": "Stone vanity under fabrication with its stone-faced drawer pulled open" },
+          { "src": "stone-vanity-mitred-edge.jpg", "width": 1440, "height": 1440, "alt": "Mitred corner of a stone vanity, cut so the veining runs unbroken around the edge" }
+        ]
+      },
+      {
+        "title": "A timber-frame house on the East End",
+        "location": "East End",
+        "material": "Stone, tile and slab throughout",
+        "blurb": "Whole-house work in one of the more interesting builds we have been part of — a stone fireplace wall and slab table in the great room, a fluted stone bar, and tile from the kitchen through to the baths.",
+        "photos": [
+          { "src": "great-room-stone-fireplace.jpg", "width": 1440, "height": 1440, "alt": "Stone fireplace wall and a live-edge stone coffee table in a timber-framed great room" },
+          { "src": "fluted-stone-bar.jpg", "width": 1440, "height": 1440, "alt": "Built-in bar with a fluted stone back panel, stone counter, and white oak shelving" },
+          { "src": "fluted-stone-detail.jpg", "width": 1440, "height": 1440, "alt": "Close-up of fluted stone, each rib cut into the face of the slab" },
+          { "src": "iridescent-tile-backsplash.jpg", "width": 1440, "height": 1440, "alt": "Arched wall of iridescent blue-green tile above a dark bar counter with lighting under the shelf" },
+          { "src": "bar-waterfall-counter.jpg", "width": 1440, "height": 1440, "alt": "Dark stone bar counter with a waterfall end running down over a leather-clad panel" },
+          { "src": "kitchen-tile-backsplash.jpg", "width": 1440, "height": 1440, "alt": "Cream tile backsplash and dark stone countertop beside a stainless range" },
+          { "src": "double-vanity-slab-backsplash.jpg", "width": 1440, "height": 1440, "alt": "Double vanity in green-grey stone with a matching slab backsplash and undermount basins" }
+        ]
+      },
+      {
+        "title": "Powder room and bath in marble",
+        "location": "East End",
+        "material": "Dark veined marble and grey marble",
+        "blurb": "A trough basin carved from the same dark slab as the vanity top, set against a glass mosaic wall — and a shower next door floored in a single piece of grey marble.",
+        "photos": [
+          { "src": "powder-room-trough-sink.jpg", "width": 1440, "height": 1440, "alt": "Dark marble powder room vanity with a trough basin carved from the same slab" },
+          { "src": "trough-sink-detail.jpg", "width": 1440, "height": 1440, "alt": "Close-up of a trough basin cut into dark veined marble, with a polished drain" },
+          { "src": "powder-room-mosaic-wall.jpg", "width": 1440, "height": 1440, "alt": "Dark marble vanity and trough sink against a red and teal glass mosaic wall" },
+          { "src": "powder-room-marble-floor.jpg", "width": 1440, "height": 1440, "alt": "Large-format grey marble floor running through a powder room" },
+          { "src": "marble-shower-slab-floor.jpg", "width": 1440, "height": 1440, "alt": "Marble shower with subway-tiled walls, a corner bench, and a floor cut from a single slab" }
+        ]
+      },
+      {
+        "title": "Veins lined up: a full-slab shower",
+        "location": "East End",
+        "material": "Vein-cut striped marble",
+        "blurb": "Walls and ceiling both, with the veining matched so it runs straight through every corner and overhead. This one was a challenge.",
+        "photos": [
+          { "src": "slab-shower-walls.jpg", "width": 1440, "height": 1440, "alt": "Shower lined in vein-cut striped marble with a recessed niche and body jets, the veining running continuously around the corner" },
+          { "src": "slab-shower-ceiling.jpg", "width": 1440, "height": 1440, "alt": "Striped marble slab continuing across the shower ceiling, with rain heads set into the stone" }
+        ]
+      }
+    ]
   }
 }
