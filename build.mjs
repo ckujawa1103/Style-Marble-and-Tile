@@ -434,6 +434,7 @@ for (const page of pages) {
       css: url("assets/css/styles.css"),
       js: url("assets/js/main.js"),
       logo: url("assets/img/logo.svg"),
+      heroImage: url("assets/img/gallery/sag-harbor-marble-island.jpg"),
       ogImage: absolute("assets/img/og.png"),
     },
     year: new Date().getFullYear(),
