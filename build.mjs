@@ -184,7 +184,9 @@ const galleryItems = gallery.length
       .map(
         (g) => `
         <figure class="shot">
-          <img src="${esc(url("assets/img/gallery/" + g.src))}" alt="${esc(g.alt)}" loading="lazy" width="800" height="600">
+          <img src="${esc(url("assets/img/gallery/" + g.src))}" alt="${esc(g.alt)}"
+               loading="lazy" decoding="async"
+               width="${esc(g.width ?? 1600)}" height="${esc(g.height ?? 1200)}">
           ${g.caption ? `<figcaption>${esc(g.caption)}</figcaption>` : ""}
         </figure>`,
       )

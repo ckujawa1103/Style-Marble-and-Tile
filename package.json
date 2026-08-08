@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "build": "node build.mjs",
-    "dev": "node build.mjs --serve"
+    "dev": "node build.mjs --serve",
+    "photos": "node scripts/import-photos.mjs"
   },
   "engines": {
     "node": ">=20"
