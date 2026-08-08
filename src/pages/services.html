@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{> head }}
+</head>
+<body>
+{{> header }}
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Services</p>
+      <h1>Stone and tile work, start to finish</h1>
+      <p class="lede">
+        Everything below is done by the same crew that comes out to template the
+        job — no subcontracted fabrication, no handoff where the details get lost.
+      </p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="card-grid">
+        {{{ html.serviceCards }}}
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-alt">
+    <div class="wrap wrap-narrow">
+      <header class="section-head">
+        <h2>How a job runs</h2>
+      </header>
+      <ol class="steps">
+        <li>
+          <h3>Walk the job</h3>
+          <p>We come look at the space, take rough measurements, and talk through material and layout.</p>
+        </li>
+        <li>
+          <h3>Written estimate</h3>
+          <p>Material, square footage, and labor broken out separately, with a schedule.</p>
+        </li>
+        <li>
+          <h3>Template</h3>
+          <p>Once cabinets or substrate are set, we template to the actual space — not to the plans.</p>
+        </li>
+        <li>
+          <h3>Fabricate</h3>
+          <p>Slab layout for veining and seams, cutouts, and edge profiles in the shop.</p>
+        </li>
+        <li>
+          <h3>Install</h3>
+          <p>Set, seamed, sealed, and cleaned up. We walk it with you before we leave.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+{{> cta }}
+
+</main>
+
+{{> footer }}
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{> head }}
+</head>
+<body>
+{{> header }}
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Reviews</p>
+      <h1>What people say</h1>
+      <p class="lede">
+        Reviews from homeowners, builders, and designers we have worked with on
+        the East End.
+      </p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="review-grid review-grid-full">
+        {{{ html.reviews }}}
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-alt">
+    <div class="wrap wrap-narrow center">
+      <h2>Worked with us?</h2>
+      <p class="lede">
+        Reviews are how neighbours find a local shop. If we did right by you, a
+        few sentences on Google helps more than you would think — and we read
+        every one.
+      </p>
+      <p>
+        <a class="btn btn-lg" href="{{ business.links.googleReview }}">Leave a Google review</a>
+      </p>
+    </div>
+  </section>
+
+{{> cta }}
+
+</main>
+
+{{> footer }}
+</body>
+</html>

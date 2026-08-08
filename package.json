@@ -1,0 +1,14 @@
+{
+  "name": "style-marble-and-tile",
+  "version": "1.0.0",
+  "description": "Website for Style Marble and Tile — Hampton Bays, NY",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs --serve"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

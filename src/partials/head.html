@@ -1,0 +1,23 @@
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+  <meta name="robots" content="{{ page.robots }}">
+  <link rel="canonical" href="{{ page.canonical }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ business.name }}">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:url" content="{{ page.canonical }}">
+  <meta property="og:locale" content="{{ site.locale }}">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="geo.region" content="US-NY">
+  <meta name="geo.placename" content="Hampton Bays">
+
+  <link rel="icon" href="{{ u.logo }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ u.css }}">
+
+  {{{ html.schema }}}
+  {{{ html.analytics }}}

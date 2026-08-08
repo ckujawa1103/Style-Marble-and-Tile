@@ -1,0 +1,57 @@
+  <footer class="footer">
+    <div class="wrap footer-grid">
+
+      <div class="footer-col">
+        <a class="brand brand-footer" href="{{ u.home }}">
+          <img src="{{ u.logo }}" alt="" width="34" height="34">
+          <span class="brand-text"><strong>Style Marble</strong><em>and Tile</em></span>
+        </a>
+        <p class="footer-blurb">{{ business.tagline }}</p>
+        <p class="footer-license">{{ business.licenseNumber }}</p>
+      </div>
+
+      <div class="footer-col">
+        <h2>Visit or call</h2>
+        <address>
+          <a href="{{ business.links.googleMaps }}">{{ business.addressLine }}</a><br>
+          <a href="{{ business.telHref }}">{{ business.phone }}</a><br>
+          <a href="mailto:{{ business.email }}">{{ business.email }}</a>
+        </address>
+        <dl class="hours">
+          {{{ html.hours }}}
+        </dl>
+      </div>
+
+      <div class="footer-col">
+        <h2>Services</h2>
+        <ul class="footer-links">
+          <li><a href="{{ u.services }}#kitchen-countertops">Kitchen countertops</a></li>
+          <li><a href="{{ u.services }}#bathroom-vanities-and-showers">Bathrooms &amp; showers</a></li>
+          <li><a href="{{ u.services }}#backsplashes">Backsplashes</a></li>
+          <li><a href="{{ u.services }}#tile-installation">Floor &amp; wall tile</a></li>
+          <li><a href="{{ u.services }}#custom-fabrication">Custom fabrication</a></li>
+          <li><a href="{{ u.services }}#outdoor-stone">Outdoor stone &amp; pool coping</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>Service area</h2>
+        <ul class="area-list footer-area">
+          {{{ html.areaList }}}
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="wrap footer-base">
+      <p>&copy; {{ year }} {{ business.legalName }} &middot; All rights reserved.</p>
+      <p><a href="{{ business.links.googleReview }}">Leave a review</a></p>
+    </div>
+  </footer>
+
+  <a class="call-fab" href="{{ business.telHref }}" aria-label="Call {{ business.phone }}">
+    <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+    Call now
+  </a>
+
+  <script src="{{ u.js }}" defer></script>

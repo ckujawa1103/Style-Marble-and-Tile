@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{> head }}
+</head>
+<body>
+{{> header }}
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Gallery</p>
+      <h1>Recent projects</h1>
+      <p class="lede">
+        Kitchens, bathrooms, backsplashes, and outdoor stone from around
+        {{ business.address.locality }} and the East End.
+      </p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="gallery-grid gallery-grid-full">
+        {{{ html.gallery }}}
+      </div>
+    </div>
+  </section>
+
+{{> cta }}
+
+</main>
+
+{{> footer }}
+</body>
+</html>

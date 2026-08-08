@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{> head }}
+</head>
+<body>
+{{> header }}
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Hampton Bays, New York</p>
+        <h1>Marble, granite, and tile — <em>cut and set right.</em></h1>
+        <p class="lede">{{ business.intro }}</p>
+        <div class="hero-actions">
+          <a class="btn btn-lg" href="{{ u.contact }}">Get a free estimate</a>
+          <a class="btn btn-lg btn-ghost" href="{{ business.telHref }}">Call {{ business.phone }}</a>
+        </div>
+        <ul class="hero-trust">
+          <li>Free written estimates</li>
+          <li>Licensed &amp; insured</li>
+          <li>Template, fabricate &amp; install</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <header class="section-head">
+        <h2>What we do</h2>
+        <p>Stone and tile for kitchens, baths, and the outside of the house — one shop from template to install.</p>
+      </header>
+      <div class="teaser-grid">
+        {{{ html.serviceTeasers }}}
+      </div>
+      <p class="section-more"><a href="{{ u.services }}">All services in detail &rarr;</a></p>
+    </div>
+  </section>
+
+  <section class="band band-alt">
+    <div class="wrap">
+      <header class="section-head">
+        <h2>Why homeowners call us back</h2>
+      </header>
+      <div class="pillars">
+        {{{ html.differentiators }}}
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <header class="section-head">
+        <h2>Recent work</h2>
+        <p>Kitchens, baths, and patios from around the East End.</p>
+      </header>
+      <div class="gallery-grid">
+        {{{ html.gallery }}}
+      </div>
+      <p class="section-more"><a href="{{ u.gallery }}">See the full gallery &rarr;</a></p>
+    </div>
+  </section>
+
+  <section class="band band-alt">
+    <div class="wrap">
+      <header class="section-head">
+        <h2>What people say</h2>
+      </header>
+      <div class="review-grid">
+        {{{ html.reviews }}}
+      </div>
+      <p class="section-more"><a href="{{ u.reviews }}">More reviews &rarr;</a></p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap area-block">
+      <div>
+        <h2>Where we work</h2>
+        <p>
+          Based in {{ business.address.locality }} and working across the South Fork
+          and North Fork — {{{ html.areaSentence }}}. If your town is not on the
+          list, call and ask.
+        </p>
+      </div>
+      <ul class="area-list">
+        {{{ html.areaList }}}
+      </ul>
+    </div>
+  </section>
+
+  <section class="band band-alt">
+    <div class="wrap wrap-narrow">
+      <header class="section-head">
+        <h2>Common questions</h2>
+      </header>
+      <div class="faq">
+        {{{ html.faq }}}
+      </div>
+    </div>
+  </section>
+
+{{> cta }}
+
+</main>
+
+{{> footer }}
+</body>
+</html>

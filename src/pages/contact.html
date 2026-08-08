@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{> head }}
+</head>
+<body>
+{{> header }}
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Free estimate</p>
+      <h1>Tell us about the job</h1>
+      <p class="lede">
+        The more you can tell us — rooms, rough square footage, material you have
+        in mind, timing — the more useful the first conversation is.
+      </p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap contact-grid">
+
+      <div class="contact-form-col">
+        <form id="quote-form" class="form" method="post" action="{{ form.endpoint }}">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="town">Town</label>
+            <input id="town" name="town" type="text" autocomplete="address-level2" placeholder="Hampton Bays, Southampton, …">
+          </div>
+
+          <fieldset class="field">
+            <legend>What is the job?</legend>
+            <div class="checks">
+              <label><input type="checkbox" name="job" value="Kitchen countertops"> Kitchen countertops</label>
+              <label><input type="checkbox" name="job" value="Bathroom / shower"> Bathroom or shower</label>
+              <label><input type="checkbox" name="job" value="Backsplash"> Backsplash</label>
+              <label><input type="checkbox" name="job" value="Floor or wall tile"> Floor or wall tile</label>
+              <label><input type="checkbox" name="job" value="Custom fabrication"> Custom fabrication</label>
+              <label><input type="checkbox" name="job" value="Outdoor stone"> Outdoor stone / pool</label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="details">Project details</label>
+            <textarea id="details" name="details" rows="5" placeholder="Rough size, material you are considering, and when you would like it done."></textarea>
+          </div>
+
+          <!-- Spam trap: real people never fill this in, bots usually do. -->
+          <div class="hp" aria-hidden="true">
+            <label for="company">Company</label>
+            <input id="company" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <input type="hidden" name="_subject" value="Website estimate request">
+
+          <button class="btn btn-lg" type="submit">Send request</button>
+          <p class="form-note">We usually reply the same day. No mailing list, ever.</p>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <aside class="contact-info-col">
+        <div class="info-card">
+          <h2>Call or stop by</h2>
+          <p class="info-phone"><a href="{{ business.telHref }}">{{ business.phone }}</a></p>
+          <p><a href="mailto:{{ business.email }}">{{ business.email }}</a></p>
+          <address>
+            <a href="{{ business.links.googleMaps }}">{{ business.addressLine }}</a>
+          </address>
+          <h3>Hours</h3>
+          <dl class="hours">
+            {{{ html.hours }}}
+          </dl>
+        </div>
+
+        <div class="info-card">
+          <h2>Service area</h2>
+          <ul class="area-list">
+            {{{ html.areaList }}}
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+</main>
+
+{{> footer }}
+</body>
+</html>
