@@ -30,7 +30,9 @@
   "ctaCallNow":          { "en": "Call now", "es": "Llame ahora" },
 
   "heroEyebrow":         { "en": "Hampton Bays, New York", "es": "Hampton Bays, Nueva York" },
-  "heroTitleHtml":       { "en": "Marble, granite, and tile — <em>cut and set right.</em>", "es": "Mármol, granito y azulejo — <em>cortado y colocado como se debe.</em>" },
+  "_heroNote": "The h1 is the company's own tagline, off their flyer. The keyword line that used to be the h1 sits directly beneath it so 'marble, granite, tile' and 'Hampton Bays' still appear high on the page.",
+  "heroTitleHtml":       { "en": "Dream it &amp; <em>we can Fabricate it.</em>", "es": "Imagínelo y <em>nosotros lo fabricamos.</em>" },
+  "heroSubline":         { "en": "Marble, granite, and tile in Hampton Bays — cut and set right.", "es": "Mármol, granito y azulejo en Hampton Bays — cortado y colocado como se debe." },
   "trustLicensed":       { "en": "Licensed & insured", "es": "Con licencia y seguro" },
   "trustPermitted":      { "en": "Permitted in every local township", "es": "Con permisos en todos los municipios locales" },
   "trustEstimates":      { "en": "Free estimates", "es": "Presupuestos gratis" },

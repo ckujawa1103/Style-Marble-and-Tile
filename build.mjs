@@ -463,6 +463,9 @@ function buildLanguage(lang) {
       js: `${s.basePath}/assets/js/main.js`.replace(/\/+/g, "/"),
       logo: `${s.basePath}/assets/img/logo.svg`.replace(/\/+/g, "/"),
       wordmark: `${s.basePath}/assets/img/wordmark.svg`.replace(/\/+/g, "/"),
+      favicon32: `${s.basePath}/assets/img/favicon-32.png`.replace(/\/+/g, "/"),
+      favicon16: `${s.basePath}/assets/img/favicon-16.png`.replace(/\/+/g, "/"),
+      appleIcon: `${s.basePath}/assets/img/apple-touch-icon.png`.replace(/\/+/g, "/"),
       heroImage: `${s.basePath}/assets/img/gallery/sag-harbor-marble-island.jpg`.replace(/\/+/g, "/"),
       // Reuse the gallery's description of the same photo, so the hero image is
       // described in the page's own language rather than always in English.

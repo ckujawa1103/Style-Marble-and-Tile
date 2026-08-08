@@ -22,7 +22,14 @@
   <meta name="geo.region" content="US-NY">
   <meta name="geo.placename" content="Hampton Bays">
 
+  <!-- The red S monogram. SVG first for browsers that take it (stays sharp at
+       any size); PNGs for the ones that do not. -->
   <link rel="icon" href="{{ u.logo }}" type="image/svg+xml">
+  <link rel="icon" href="{{ u.favicon32 }}" sizes="32x32" type="image/png">
+  <link rel="icon" href="{{ u.favicon16 }}" sizes="16x16" type="image/png">
+  <link rel="apple-touch-icon" href="{{ u.appleIcon }}">
+  <meta name="theme-color" content="#a01f1d">
+
   <link rel="stylesheet" href="{{ u.css }}">
 
   {{{ html.schema }}}
