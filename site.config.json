@@ -34,7 +34,7 @@
     "_founded_note": "Directory listings say the shop started in 1987, but their own copy has said 'in business 30 years' for a while. Confirm the real year and put it here — an accurate 'since XXXX' is a strong trust signal. Left blank so nothing wrong gets published.",
     "founded": "",
 
-    "_license_note": "Suffolk County Home Improvement License number. Ask for it — displaying it converts skeptical homeowners.",
+    "_license_note": "The shop is licensed and insured — confirmed by the owner. This field is just the licence NUMBER, which is displayed in the footer when present. Ask for it: a visible number converts skeptical homeowners better than the word 'licensed' alone.",
     "licenseNumber": "",
 
     "phone": "(631) 728-0049",
@@ -194,6 +194,10 @@
     {
       "title": "The hand work still gets done by hand",
       "body": "Most of a countertop is machine work, and that is fine — machines are accurate. But the delicate custom trim pieces get cut by hand, because that is the only way they come out right."
+    },
+    {
+      "title": "Licensed, insured, and permitted",
+      "body": "Fully licensed and insured, and permitted in every local municipality we work in. Out here that matters more than most places — village and town codes on the East End are strict, and a contractor who is not permitted where you live can stall a job for weeks."
     }
   ],
 
@@ -217,6 +221,10 @@
     {
       "q": "How long does a countertop job take?",
       "a": "Typically about one to two weeks from template to install, depending on material availability. You get the schedule in writing with the estimate."
+    },
+    {
+      "q": "Are you licensed and insured?",
+      "a": "Yes — fully licensed and insured, and permitted in every local municipality we work in. If your village or town needs paperwork filed before work starts, that is handled."
     },
     {
       "q": "Do you offer free estimates?",

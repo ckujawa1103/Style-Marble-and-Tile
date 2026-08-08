@@ -274,7 +274,7 @@ p + p { margin-top: 1rem; }
   transform: rotate(-45deg);
 }
 
-.pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+.pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; }
 .pillar { border-top: 3px solid var(--bronze); padding-top: 1.15rem; }
 .pillar h3 { margin-bottom: .5rem; }
 .pillar p { color: var(--slate); font-size: .98rem; }

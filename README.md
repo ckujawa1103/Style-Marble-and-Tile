@@ -31,9 +31,11 @@ Two more are deliberately left blank rather than guessed:
   disagree, so no founding year is published at all. Get the real one; an
   accurate "since 1987" is a strong trust signal, and a wrong one is worse than
   silence.
-- **`business.licenseNumber`** — the Suffolk County home improvement licence.
-  Once it is filled in, the footer shows it automatically, and you can add
-  "Licensed & insured" to the trust strip on the home page.
+- **`business.licenseNumber`** — the licence *number*. The shop being licensed,
+  insured, and permitted in the local municipalities is confirmed and is stated
+  across the site already; this field is only the number itself, which the
+  footer displays automatically once present. Worth chasing — a visible number
+  converts better than the word "licensed" on its own.
 
 ---
 
