@@ -98,12 +98,9 @@ lead is lost — but that is a worse experience and some people will drop off.
 Every push to `main` deploys automatically.
 
 **6. Point a domain at it.** Until then the site lives at
-`https://ckujawa1103.github.io/Style-Marble-and-Tile/`. Buy
-`stylemarbleandtile.com` (or similar), add a `CNAME` file at the repo root
-containing just the domain, and set the DNS records GitHub gives you. Then in
-`site.config.json` set `site.url` to `https://stylemarbleandtile.com` and
-`site.basePath` to `""` — the second part matters, or every link on the site
-will keep pointing at the old subfolder.
+`https://ckujawa1103.github.io/Style-Marble-and-Tile/`. See "Connecting a
+domain" below — GitHub Pages hosts a custom domain for free, with HTTPS. You
+do not need to buy web hosting.
 
 **7. Submit the sitemap.** Once live, add the site to
 [Google Search Console](https://search.google.com/search-console) and submit
@@ -111,6 +108,97 @@ will keep pointing at the old subfolder.
 before they land on you.
 
 ---
+
+## Connecting a domain
+
+**You do not need a web host.** GitHub Pages serves a custom domain for free,
+with a free auto-renewing HTTPS certificate. The only thing to buy is the
+domain name itself (roughly $10–15 a year).
+
+Buy the domain anywhere — Cloudflare and Namecheap sell at cost; avoid
+registrars that bundle "web hosting" you will not use.
+
+**1. Tell GitHub the domain.** Settings → Pages → Custom domain → enter
+`stylemarbleandtile.com` → Save. That writes a `CNAME` file into the repo.
+Leave it there; the build copies it into `dist/` automatically.
+
+**2. Set DNS at the registrar.** For the apex domain, four A records and four
+AAAA records, all pointing at GitHub:
+
+```
+A     @   185.199.108.153
+A     @   185.199.109.153
+A     @   185.199.110.153
+A     @   185.199.111.153
+AAAA  @   2606:50c0:8000::153
+AAAA  @   2606:50c0:8001::153
+AAAA  @   2606:50c0:8002::153
+AAAA  @   2606:50c0:8003::153
+```
+
+And one for `www`, so both spellings work:
+
+```
+CNAME www ckujawa1103.github.io.
+```
+
+**3. Wait, then force HTTPS.** DNS takes minutes to a day. Once GitHub has
+issued the certificate, tick "Enforce HTTPS" in Settings → Pages. Do not skip
+this — a stone company asking for an address over plain HTTP looks broken in
+Chrome.
+
+**4. Update the config.** In `site.config.json`:
+
+```json
+"url": "https://stylemarbleandtile.com",
+"basePath": ""
+```
+
+Both lines matter. Without the `basePath` change every link on the site keeps
+pointing at the old `/Style-Marble-and-Tile/` subfolder.
+
+**5. Re-submit the sitemap** in Google Search Console under the new domain,
+and update the website field on the Google Business Profile.
+
+### What GitHub Pages will not do
+
+It serves static files and nothing else. That is the right trade for this site,
+but two things have to live elsewhere:
+
+- **The estimate form** needs somewhere to POST to (Formspree, or a Cloudflare
+  Worker if we build the Spanish translation pipeline).
+- **Email** is completely separate from web hosting. Owning
+  `stylemarbleandtile.com` does not give you `info@stylemarbleandtile.com` —
+  see below.
+
+## Email on the domain
+
+Cheapest to most convenient. Prices checked August 2026; verify before buying.
+
+**Free — Cloudflare Email Routing.** Forwards `info@stylemarbleandtile.com`
+into the existing Gmail. Costs nothing, takes ten minutes, and mail keeps
+arriving where it already does. The catch: it only receives. Replying *as* the
+domain address needs an SMTP relay wired into Gmail's "Send mail as", or every
+reply goes out from the gmail.com address and undoes the point.
+
+**Free — Zoho Mail.** Real mailboxes, up to 5 users, 5 GB each, one domain.
+Genuinely free, not a trial. The catch: no IMAP or POP on the free tier, so
+webmail and Zoho's own apps only — no Outlook, no iPhone Mail app. Also only
+offered in some regions.
+
+**~$19/year — Migadu micro, or similar.** Real mailboxes with IMAP, unlimited
+addresses. Fine if nobody needs Gmail specifically.
+
+**$7/user/month — Google Workspace Business Starter** ($8.40 billed monthly).
+The most expensive option here and still probably the right one, for three
+reasons: the person at the desk already knows Gmail and will not have to learn
+anything; deliverability is the best of the group, which matters when you are
+emailing estimates; and the Spanish translation pipeline is a Google Apps
+Script, which runs natively on a Google account and needs no third-party
+service. One mailbox is about $84 a year — less than an hour of shop time.
+
+**Recommendation:** if the translation pipeline is happening, Google Workspace.
+If not, Cloudflare Email Routing into the current Gmail, and revisit later.
 
 ## About reviews
 
