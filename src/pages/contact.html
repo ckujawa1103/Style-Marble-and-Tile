@@ -62,6 +62,18 @@
           </fieldset>
 
           <div class="field">
+            <label for="calltime">{{ t.formCallTime }}</label>
+            <select id="calltime" name="calltime">
+              <option value="{{ t.formCallAny }}">{{ t.formCallAny }}</option>
+              <option value="{{ t.formCallMorning }}">{{ t.formCallMorning }}</option>
+              <option value="{{ t.formCallAfternoon }}">{{ t.formCallAfternoon }}</option>
+              <option value="{{ t.formCallSaturday }}">{{ t.formCallSaturday }}</option>
+              <option value="{{ t.formCallOther }}">{{ t.formCallOther }}</option>
+            </select>
+            <p class="field-hint">{{ t.formCallTimeHint }}</p>
+          </div>
+
+          <div class="field">
             <label for="details">{{ t.formDetails }}</label>
             <textarea id="details" name="details" rows="5" placeholder="{{ t.formDetailsPlaceholder }}"></textarea>
           </div>
