@@ -96,6 +96,17 @@
       ]
     },
     {
+      "name": "Sellado, restauración y cuidado",
+      "summary": "Aplicadores certificados de MORE AntiEtch — protegemos piedra que no instalamos nosotros.",
+      "description": "El mármol se marca. El jugo de limón, el vino, el vinagre y la mitad de los productos que hay bajo el fregadero le quitan el brillo, y una vez que pasa, frotar más fuerte no lo arregla. Somos aplicadores certificados de MORE AntiEtch, un tratamiento invisible que protege la superficie contra los ácidos y las manchas — y podemos restaurar encimeras ya marcadas antes de sellarlas.",
+      "bullets": [
+        "Aplicación certificada del sellador MORE AntiEtch",
+        "Restauración de piedra marcada, opaca o manchada",
+        "Repulido y abrillantado de encimeras existentes",
+        "Trabajamos sobre piedra que no instalamos, incluso de otros fabricantes"
+      ]
+    },
+    {
       "name": "Cocinas exteriores y bordes de piscina",
       "summary": "Encimeras para asador, bordes de piscina y piedra de patio hechos para los inviernos del East End.",
       "description": "Los ciclos de hielo y deshielo aquí son duros con la piedra exterior. Especificamos y colocamos material que lo aguanta — encimeras para asador y cocinas exteriores, bordes de piscina y azulejo de línea de agua, y patios y caminos de bluestone.",
@@ -108,10 +119,33 @@
     }
   ],
 
+  "technology": {
+    "title": "La máquina que corta su piedra",
+    "blurb": "En 2024 trajimos un CNC de doble router con sierra, de Construal — el primero de su tipo en el país en ese momento. No está ahí para impresionar. Está ahí porque cambia lo que le podemos prometer sobre su propia losa.",
+    "points": [
+      {
+        "title": "Planificamos el corte sobre su losa real",
+        "body": "Una cámara cenital escanea la losa, así que los cortes se planifican sobre el veteado real y no sobre un rectángulo genérico. Así es como las vetas calzan de un lado al otro de una unión, en un inglete y hasta en el techo de una ducha — usted puede ver dónde va a quedar el dibujo antes de que cortemos nada."
+      },
+      {
+        "title": "Bloques de hasta 12 pulgadas de espesor",
+        "body": "No solo losas. Bloques gruesos, que es de donde salen las bateas talladas, los bordes ingleteados macizos y los escalones y hogares de una sola pieza."
+      },
+      {
+        "title": "Brazos de succión para mover la piedra",
+        "body": "Las losas se levantan planas en vez de forzarlas a mano. Menos flexión, menos roturas y un taller más seguro."
+      },
+      {
+        "title": "Sobredimensionada a propósito",
+        "body": "Veintiocho pies de largo por dieciocho de ancho, y doce pies hasta la parte alta del motor de la sierra. Las piezas grandes no hay que recortarlas solo para que entren en la máquina, así que los tramos largos quedan de una sola pieza."
+      }
+    ]
+  },
+
   "differentiators": [
     {
       "title": "Nosotros mismos lo fabricamos",
-      "body": "La plantilla, la fabricación y la instalación son todas nuestras. Nada se pierde en el traspaso entre un fabricante y un instalador que nunca se conocieron, y si algo hay que ajustar el día de la instalación, los que lo cortaron están ahí presentes."
+      "body": "La plantilla, la fabricación y la instalación son todas nuestras, en nuestro propio CNC. Nada se pierde en el traspaso entre un fabricante y un instalador que nunca se conocieron, y si algo hay que ajustar el día de la instalación, los que lo cortaron están ahí presentes."
     },
     {
       "title": "En el East End desde 1987",
@@ -147,6 +181,14 @@
     {
       "q": "¿Cuánto va a tardar mi trabajo y cuánto va a costar?",
       "a": "Cada trabajo es distinto, y la época del año pesa mucho aquí — la temporada que mueve al East End afecta tanto la programación como los precios. En vez de dar una cifra que no podamos sostener, definimos el tiempo y el costo junto con usted como parte del presupuesto, una vez que vimos el trabajo."
+    },
+    {
+      "q": "Mi mármol está marcado y opaco en partes. ¿Se puede arreglar?",
+      "a": "Por lo general sí. Las marcas son daño por ácido en la superficie — el cerco de un vaso, un limón que quedó sobre la encimera — y no es una mancha que se pueda frotar, es el pulido que se comió el ácido. Podemos restaurar la superficie y después sellarla con MORE AntiEtch para que no siga pasando. No hace falta que nos haya comprado las encimeras a nosotros."
+    },
+    {
+      "q": "¿Qué es AntiEtch y lo necesito?",
+      "a": "MORE AntiEtch es un sellador invisible que protege el mármol contra los ácidos y las manchas — el vino, el limón, el vinagre y los productos de limpieza que le quitan el brillo a una encimera pulida. Somos aplicadores certificados. Si tiene mármol en una cocina que de verdad usa, vale la pena preguntar; en cuarzo o granito por lo general no hace falta, y se lo vamos a decir."
     },
     {
       "q": "¿Tienen licencia y seguro?",

@@ -178,6 +178,18 @@
       ]
     },
     {
+      "slug": "sealing-and-restoration",
+      "name": "Sealing, Restoration & Care",
+      "summary": "Certified MORE AntiEtch applicators — we can protect stone we did not install.",
+      "description": "Marble etches. Lemon juice, wine, vinegar and half the things under your sink will dull the polish, and once it has happened, wiping harder does not fix it. We are certified applicators of MORE AntiEtch, an invisible treatment that defends the surface against acids and staining — and we can restore tops that are already marked before sealing them.",
+      "bullets": [
+        "Certified MORE AntiEtch sealer application",
+        "Restoration of etched, dulled, or stained stone",
+        "Re-polishing and honing of existing tops",
+        "Work on stone we did not install, including other fabricators'"
+      ]
+    },
+    {
       "slug": "outdoor-kitchens-and-pool-coping",
       "name": "Outdoor Kitchens & Pool Coping",
       "summary": "BBQ counters, pool coping, and patio stone built for East End winters.",
@@ -191,10 +203,34 @@
     }
   ],
 
+  "_technology_note": "Specs are from the shop's own August 2024 post. The 'first in the country' claim is deliberately tied to when the machine was installed, because it will not stay true forever.",
+  "technology": {
+    "title": "The machine that cuts your stone",
+    "blurb": "In 2024 we brought in a dual-router CNC and saw from Construal — the first of its kind in the country at the time. It is not there to be impressive. It is there because it changes what we can promise you about your own slab.",
+    "points": [
+      {
+        "title": "We plan the layout on your actual slab",
+        "body": "An overhead camera scans the slab, so the cuts are laid out on the real veining rather than on a generic rectangle. That is how the veins line up across a seam, around a mitre, and up onto a shower ceiling — you can see where the figure will fall before anything is cut."
+      },
+      {
+        "title": "Blocks up to 12 inches thick",
+        "body": "Not just slabs. Thick blocks, which is what carved basins, solid mitred edges, and one-piece steps and hearths are cut from."
+      },
+      {
+        "title": "Suction arms move the stone",
+        "body": "Slabs get lifted flat instead of manhandled. Less flex, fewer cracks, and a safer shop."
+      },
+      {
+        "title": "Oversized on purpose",
+        "body": "Twenty-eight feet long by eighteen wide, and twelve feet to the top of the saw motor. Big pieces do not have to be cut down just to fit the machine, so long runs stay in one piece."
+      }
+    ]
+  },
+
   "differentiators": [
     {
       "title": "We fabricate it ourselves",
-      "body": "Templating, fabrication, and installation are all in house. Nothing gets lost in a handoff between a fabricator and an installer who have never met, and if something needs adjusting on install day, the people who cut it are standing there."
+      "body": "Templating, fabrication, and installation are all in house, on our own CNC. Nothing gets lost in a handoff between a fabricator and an installer who have never met, and if something needs adjusting on install day, the people who cut it are standing there."
     },
     {
       "title": "Working the East End since 1987",
@@ -230,6 +266,14 @@
     {
       "q": "How long will my job take, and what will it cost?",
       "a": "Every job is different, and the time of year makes a real difference out here — the season the East End runs on affects both scheduling and pricing. Rather than quote a number we cannot stand behind, we work out the time and the cost together with you as part of the estimate, once we have seen the job."
+    },
+    {
+      "q": "My marble is etched and dull in places. Can that be fixed?",
+      "a": "Usually, yes. Etching is acid damage to the surface — rings from a glass, a lemon left on the counter — and it is not a stain you can scrub out, it is the polish eaten away. We can restore the surface and then seal it with MORE AntiEtch so it does not keep happening. You do not need to have bought the tops from us."
+    },
+    {
+      "q": "What is AntiEtch, and do I need it?",
+      "a": "MORE AntiEtch is an invisible sealer that defends marble against acids and staining — the wine, lemon, vinegar and cleaning products that dull a polished top. We are certified applicators. If you have marble in a kitchen you actually cook in, it is worth asking about; on quartz or granite it is usually not necessary, and we will tell you so."
     },
     {
       "q": "Are you licensed and insured?",

@@ -108,7 +108,7 @@ const overlay = (base, over, path = "") => {
 
 function buildLanguage(lang) {
   const config = unwrap(lang === "en" ? baseConfig : overlay(baseConfig, esOverrides));
-  const { site: s, business: b, forms: f, analytics, serviceArea, services, differentiators, faq, materials } = config;
+  const { site: s, business: b, forms: f, analytics, serviceArea, services, differentiators, faq, materials, technology } = config;
   const reviews = config.reviews.items;
   const projects = config.gallery.projects ?? [];
 
@@ -178,6 +178,16 @@ function buildLanguage(lang) {
         <div class="pillar">
           <h3>${esc(d.title)}</h3>
           <p>${esc(d.body)}</p>
+        </div>`,
+    )
+    .join("\n");
+
+  const techPoints = technology.points
+    .map(
+      (p) => `
+        <div class="pillar">
+          <h3>${esc(p.title)}</h3>
+          <p>${esc(p.body)}</p>
         </div>`,
     )
     .join("\n");
@@ -430,6 +440,7 @@ function buildLanguage(lang) {
     lang,
     business: { ...b, addressLine, telHref: telHref(b.phone) },
     site: s,
+    technology,
     t: Object.fromEntries(Object.keys(ui).filter((k) => !k.startsWith("_")).map((k) => [k, ui[k][lang]])),
     page: {
       title: page.title,
@@ -463,6 +474,7 @@ function buildLanguage(lang) {
       serviceTeasers,
       footerServices,
       differentiators: differentiatorBlocks,
+      techPoints,
       areaList,
       materials: materialList,
       areaSentence: esc(areaSentence),
