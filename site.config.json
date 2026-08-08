@@ -288,15 +288,55 @@
 
   "reviews": {
     "_comment": [
-      "IMPORTANT: only put REAL reviews here, copied verbatim, with the reviewer's",
-      "real name. Do not write testimonials. Fake reviews are illegal under the",
-      "FTC's rule on consumer reviews (16 CFR Part 465) and Google delists",
-      "businesses for them.",
+      "IMPORTANT: only REAL reviews, copied verbatim, with the reviewer's real",
+      "name. Do not write testimonials and do not tidy up the ones below. Fake or",
+      "materially altered reviews are illegal under the FTC's rule on consumer",
+      "reviews (16 CFR Part 465).",
       "",
-      "There are real 5-star reviews on Yelp and Angi — copy them across as:",
-      "  { \"author\": \"First L.\", \"rating\": 5, \"date\": \"2026-05-02\", \"text\": \"...\", \"source\": \"Yelp\" }"
+      "Quoted exactly as posted, typos included — 'Grate people' is Nirit's, not a",
+      "mistake here. Fixing a reviewer's spelling means publishing words they did",
+      "not write, and the small gain is not worth it.",
+      "",
+      "Dates: Yelp and Google only showed 'N years ago' when these were captured",
+      "in August 2026, so most are year-only. Ellen signed hers with a month.",
+      "",
+      "NOTE ON STARS IN SEARCH: these feed the aggregateRating in the page's",
+      "structured data, but Google does not show star rich results for reviews a",
+      "business hosts about itself (self-serving markup, LocalBusiness types). The",
+      "stars people see next to the business in search come from the Google",
+      "Business Profile. The markup still gets read and can inform AI summaries,",
+      "so it stays — just do not expect it to put stars on the search page."
     ],
-    "items": []
+    "items": [
+      {
+        "author": "Ellen H.",
+        "rating": 5,
+        "date": "2022-08",
+        "source": "Yelp",
+        "text": "I just completed the most fantastic, painless and seamless \"update\" to my kitchen with Style Marble. After much debate, I \"finally\" got rid of the countertop granite circa (very long ago!) and went to Silestone. My experience with the owner / Melissa / Raul (sp?) and the rest of the team was 10/10. I found each of them to be courteous, professional and the quality of their workmanship and installation was, in a word, fantastic! I can't say enough great things about Style Marble."
+      },
+      {
+        "author": "Debbie C.",
+        "rating": 5,
+        "date": "2023",
+        "source": "Yelp",
+        "text": "I'm so glad my contractor found this company. They have been terrific. We ordered 2 slabs - one was a quartz stone and one was a granite stone. The granite we needed had to match our current granite stone, which was installed 15 years ago and had to be the same color. Not every place could find the match. Style Marble did and the stone top came out perfectly. i actually went to their location to pick out where i wanted the quartz to be cut and the staff was terrific. The installation was perfect as well. i highly recommend this company."
+      },
+      {
+        "author": "Barbara T.",
+        "rating": 5,
+        "date": "2024",
+        "source": "Yelp",
+        "text": "Style did a great job, helped me pick the right material for the counter top in kitchen, came to measure really quickly, created and installed a really nice counter for the sink area in the kitchen. I would work with them any time. They were friendly, helpful, and efficient!"
+      },
+      {
+        "author": "Nirit Ozer",
+        "rating": 5,
+        "date": "2024",
+        "source": "Google",
+        "text": "Grate people and wonderful work 👍"
+      }
+    ]
   },
 
   "gallery": {
