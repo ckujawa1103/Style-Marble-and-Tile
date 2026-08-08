@@ -36,6 +36,7 @@
     "Pizarra",
     "Bluestone",
     "Corian y superficie sólida",
+    "Dekton",
     "Azulejo de cerámica y porcelanato"
   ],
 
@@ -247,6 +248,27 @@
           { "alt": "Tocador y batea de mármol oscuro contra una pared de mosaico de vidrio en rojo y verde azulado" },
           { "alt": "Piso de mármol gris de formato grande recorriendo un toilette" },
           { "alt": "Ducha de mármol con paredes de azulejo tipo subway, banco de esquina y piso cortado de una sola losa" }
+        ]
+      },
+      {
+        "title": "Dentro del taller: el CNC",
+        "location": "Hampton Bays",
+        "material": "CNC de doble router con sierra",
+        "blurb": "La máquina donde se cortan las encimeras. El brazo de arriba es la cámara que escanea cada losa, así que el corte se planifica sobre su veteado real antes de que la sierra la toque.",
+        "photos": [
+          { "alt": "El brazo con la cámara cenital que escanea cada losa, montado sobre la mesa del CNC en el taller de Hampton Bays" },
+          { "alt": "Un operario en la pantalla de control del CNC, distribuyendo los cortes sobre una losa escaneada" },
+          { "alt": "El cabezal de sierra del CNC de doble router sobre la mesa de corte con listones de madera" },
+          { "alt": "Vista amplia del CNC con sierra de Construal en el taller, mostrando el largo completo de la mesa" }
+        ]
+      },
+      {
+        "title": "Sellado y restauración",
+        "location": "En obra",
+        "material": "MORE AntiEtch",
+        "blurb": "Aplicando AntiEtch a una encimera de mármol en una cocina terminada. La lámpara cura el sellador; los respiradores son porque se hace como corresponde.",
+        "photos": [
+          { "alt": "Dos operarios con respiradores aplicando sellador MORE AntiEtch a una encimera de mármol bajo una lámpara de curado" }
         ]
       },
       {

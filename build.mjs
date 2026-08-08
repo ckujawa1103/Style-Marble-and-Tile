@@ -462,6 +462,7 @@ function buildLanguage(lang) {
       css: `${s.basePath}/assets/css/styles.css`.replace(/\/+/g, "/"),
       js: `${s.basePath}/assets/js/main.js`.replace(/\/+/g, "/"),
       logo: `${s.basePath}/assets/img/logo.svg`.replace(/\/+/g, "/"),
+      wordmark: `${s.basePath}/assets/img/wordmark.svg`.replace(/\/+/g, "/"),
       heroImage: `${s.basePath}/assets/img/gallery/sag-harbor-marble-island.jpg`.replace(/\/+/g, "/"),
       // Reuse the gallery's description of the same photo, so the hero image is
       // described in the page's own language rather than always in English.

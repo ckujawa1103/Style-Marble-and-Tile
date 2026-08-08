@@ -96,6 +96,7 @@
     "Slate",
     "Bluestone",
     "Corian & solid surface",
+    "Dekton",
     "Ceramic & porcelain tile"
   ],
 
@@ -358,6 +359,27 @@
           { "src": "powder-room-mosaic-wall.jpg", "width": 1440, "height": 1440, "alt": "Dark marble vanity and trough sink against a red and teal glass mosaic wall" },
           { "src": "powder-room-marble-floor.jpg", "width": 1440, "height": 1440, "alt": "Large-format grey marble floor running through a powder room" },
           { "src": "marble-shower-slab-floor.jpg", "width": 1440, "height": 1440, "alt": "Marble shower with subway-tiled walls, a corner bench, and a floor cut from a single slab" }
+        ]
+      },
+      {
+        "title": "Inside the shop: the CNC",
+        "location": "Hampton Bays",
+        "material": "Dual-router CNC and saw",
+        "blurb": "The machine the countertops are cut on. The arm overhead is the camera that scans each slab, so the layout is planned on your actual veining before the saw touches it.",
+        "photos": [
+          { "src": "cnc-overhead-camera.jpg", "width": 1440, "height": 1440, "alt": "The overhead camera arm that scans each slab, mounted above the CNC bed in the Hampton Bays shop" },
+          { "src": "cnc-layout-screen.jpg", "width": 1440, "height": 1440, "alt": "An operator at the CNC control screen, laying out cuts on a scanned slab" },
+          { "src": "cnc-saw-head.jpg", "width": 1440, "height": 1440, "alt": "The saw head of the dual-router CNC poised over the timber-slatted cutting bed" },
+          { "src": "cnc-shop-wide.jpg", "width": 1440, "height": 1440, "alt": "Wide view of the Construal CNC and saw in the shop, showing the full length of the bed" }
+        ]
+      },
+      {
+        "title": "Sealing and restoration",
+        "location": "On site",
+        "material": "MORE AntiEtch",
+        "blurb": "Applying AntiEtch to a marble countertop in a finished kitchen. The lamp cures the sealer; the respirators are because it is done properly.",
+        "photos": [
+          { "src": "antietch-sealer-application.jpg", "width": 1440, "height": 1440, "alt": "Two crew in respirators applying MORE AntiEtch sealer to a marble countertop under a curing lamp" }
         ]
       },
       {
