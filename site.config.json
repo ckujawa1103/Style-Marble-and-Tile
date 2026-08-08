@@ -4,6 +4,15 @@
     "changes everywhere on the site — page copy, the footer, the phone links, and",
     "the structured data Google reads.",
     "",
+    "TWO DELIBERATE OMISSIONS, so they do not get written back in by accident:",
+    "  1. The Montauk Hwy showroom is small, so the site does not invite visits or",
+    "     lead with it. The address stays listed because Google cross-checks it",
+    "     against the Business Profile — but nothing says 'stop by'.",
+    "  2. The Fanning Ave slab shop is not mentioned anywhere, by choice. It is",
+    "     not off limits to customers, but they are not being pointed there.",
+    "  3. No job timelines anywhere. Every job differs and the season drives both",
+    "     schedule and price, so time and cost are settled in the estimate.",
+    "",
     "The contact details below were taken from the business's public listings",
     "(Yelp, Yahoo Local, Angi, Experience.com, hub.biz) in August 2026. Check them",
     "against what your uncle actually says before launch — directories go stale.",
@@ -29,7 +38,7 @@
     "name": "Style Marble and Tile",
     "legalName": "Style Marble and Tile, Corp.",
     "tagline": "A full-service marble, granite, and quartz fabricator on the East End.",
-    "intro": "Style Marble and Tile is a hard-surface fabrication shop and tile showroom in Hampton Bays. We cut and install kitchen countertops, vanity tops, backsplashes, fireplaces, pool coping, and BBQ counters in marble, granite, quartz, limestone, onyx, bluestone, and solid surface — and we carry the tile to go with them.",
+    "intro": "Style Marble and Tile is a hard-surface fabrication shop in Hampton Bays, working the East End since 1987. We cut and install kitchen countertops, vanity tops, backsplashes, fireplaces, pool coping, and BBQ counters in marble, granite, quartz, limestone, onyx, bluestone, and solid surface — and we supply the tile to go with them.",
 
     "_founded_note": "Confirmed from the business's own Facebook bio: 'has been in business since 1987'. The 'in business 30 years' line on some directory listings is just stale copy.",
     "founded": "1987",
@@ -147,10 +156,10 @@
     {
       "slug": "tile-and-flooring",
       "name": "Tile & Flooring",
-      "summary": "A Hampton Bays showroom that sells the tile and installs it too.",
-      "description": "Come look at material in person instead of guessing from a screen. We carry ceramic, porcelain, and natural stone, help with the color and layout questions, and install what you pick — floors, walls, and ceilings.",
+      "summary": "We supply the tile as well as installing it.",
+      "description": "Ceramic, porcelain, and natural stone for floors, walls, and ceilings — supplied and installed. We will help with the colour and layout questions and get samples in front of you, so you are not choosing a floor off a screen.",
       "bullets": [
-        "Showroom with tile and slab on display",
+        "Tile supplied as well as installed",
         "Ceramic, porcelain, and natural stone",
         "Large-format tile and slab flooring",
         "Substrate prep, crack isolation, and heated floors"
@@ -188,8 +197,8 @@
       "body": "Templating, fabrication, and installation are all in house. Nothing gets lost in a handoff between a fabricator and an installer who have never met, and if something needs adjusting on install day, the people who cut it are standing there."
     },
     {
-      "title": "A showroom you can walk into",
-      "body": "Stone is hard to choose from a photograph. Come to the shop on Montauk Highway, put your hands on the material, and get a straight answer on how marble, quartzite, and quartz actually differ once they are in a kitchen you cook in."
+      "title": "Working the East End since 1987",
+      "body": "Nearly four decades of stone on this end of the island. We know which materials hold up in a house that sits empty half the winter and gets hammered all summer, and which ones only look good for two years — and we will tell you which is which before you buy."
     },
     {
       "title": "The hand work still gets done by hand",
@@ -208,7 +217,7 @@
     },
     {
       "q": "Do you sell tile, or only install it?",
-      "a": "Both. We run a showroom at 150 E Montauk Hwy with tile and slab on display, so you can buy material from us, have us install it, or do both."
+      "a": "Both. You can buy material from us, have us install material you bought elsewhere, or do both together."
     },
     {
       "q": "Can you fabricate a slab I bought somewhere else?",
@@ -216,11 +225,11 @@
     },
     {
       "q": "What is the difference between marble, quartzite, and quartz?",
-      "a": "Marble is natural stone that etches with acid and patinas over time — beautiful, but it asks something of you. Quartzite is natural and much harder, so it resists etching and scratching. Quartz is engineered and non-porous, which makes it the lowest-maintenance of the three. Come in and we will walk you through the tradeoffs for how you actually use your kitchen."
+      "a": "Marble is natural stone that etches with acid and patinas over time — beautiful, but it asks something of you. Quartzite is natural and much harder, so it resists etching and scratching. Quartz is engineered and non-porous, which makes it the lowest-maintenance of the three. We will walk you through the tradeoffs for how you actually use your kitchen."
     },
     {
-      "q": "How long does a countertop job take?",
-      "a": "Typically about one to two weeks from template to install, depending on material availability. You get the schedule in writing with the estimate."
+      "q": "How long will my job take, and what will it cost?",
+      "a": "Every job is different, and the time of year makes a real difference out here — the season the East End runs on affects both scheduling and pricing. Rather than quote a number we cannot stand behind, we work out the time and the cost together with you as part of the estimate, once we have seen the job."
     },
     {
       "q": "Are you licensed and insured?",
