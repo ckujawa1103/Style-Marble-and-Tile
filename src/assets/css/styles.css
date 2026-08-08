@@ -141,11 +141,24 @@ p + p { margin-top: 1rem; }
 }
 .topbar-inner { display: flex; justify-content: space-between; align-items: center; gap: 1rem; min-height: 40px; }
 .topbar-area { letter-spacing: .02em; }
+.topbar-right { display: flex; align-items: center; gap: 1.25rem; }
 .topbar-phone {
   display: inline-flex; align-items: center; gap: .45rem;
   color: #fff; text-decoration: none; font-weight: 600;
 }
 .topbar-phone:hover { color: #e9c98f; }
+
+.lang-toggle {
+  display: inline-flex; align-items: center; gap: .4rem;
+  color: #cfc7bb; text-decoration: none; font-weight: 600;
+  padding: .2rem .55rem;
+  border: 1px solid rgba(255,255,255,.22);
+  border-radius: 100px;
+}
+.lang-toggle:hover { color: #fff; border-color: rgba(255,255,255,.5); }
+
+/* In the collapsed mobile menu the toggle is a nav row like any other. */
+.nav-lang { display: none; }
 
 .masthead {
   position: sticky; top: 0; z-index: 50;
@@ -543,6 +556,11 @@ p + p { margin-top: 1rem; }
 
   .topbar-area { display: none; }
   .topbar-inner { justify-content: center; }
+  .topbar-right { width: 100%; justify-content: space-between; }
+
+  /* On a phone the pill in the top bar is a small target next to the phone
+     number, so the language link also appears as a full-width menu row. */
+  .nav-lang { display: block; }
 
   .field-row { grid-template-columns: 1fr; }
   .hero-actions .btn, .cta-actions .btn { flex: 1 1 auto; }

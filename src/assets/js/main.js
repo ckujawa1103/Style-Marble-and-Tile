@@ -3,6 +3,10 @@
 //
 // Everything on the site works with this file absent — the nav links are real
 // links and the form is a real form that posts. This is enhancement only.
+//
+// There are no English strings in here. Anything the visitor reads comes off
+// data- attributes on the form, so the Spanish pages speak Spanish without a
+// second copy of this script.
 
 (function () {
   "use strict";
@@ -38,12 +42,15 @@
   // --- mark the current page in the nav ------------------------------------
 
   var here = location.pathname.replace(/index\.html$/, "");
-  Array.prototype.forEach.call(document.querySelectorAll(".nav a:not(.btn)"), function (link) {
-    var target = link.getAttribute("href");
-    if (target && target !== "/" && here.indexOf(target) === 0) {
-      link.setAttribute("aria-current", "page");
-    }
-  });
+  Array.prototype.forEach.call(
+    document.querySelectorAll(".nav a:not(.btn):not(.nav-lang)"),
+    function (link) {
+      var target = link.getAttribute("href");
+      if (target && target !== "/" && here.indexOf(target) === 0) {
+        link.setAttribute("aria-current", "page");
+      }
+    },
+  );
 
   // --- estimate form -------------------------------------------------------
 
@@ -53,6 +60,7 @@
   var status = form.querySelector(".form-status");
   var button = form.querySelector('button[type="submit"]');
   var action = form.getAttribute("action") || "";
+  var text = form.dataset;
 
   // Until a real form endpoint is configured, sending would silently fail.
   // Fall back to the visitor's email client so a lead is never lost.
@@ -65,35 +73,35 @@
   }
 
   form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
     if (!configured) {
-      e.preventDefault();
       var data = new FormData(form);
-      var jobs = data.getAll("job").join(", ");
+      // Labels stay English: this is read by the shop, not by the customer.
       var body = [
         "Name: " + (data.get("name") || ""),
         "Phone: " + (data.get("phone") || ""),
         "Email: " + (data.get("email") || ""),
         "Where: " + (data.get("where") || ""),
-        "Job: " + jobs,
+        "Job: " + data.getAll("job").join(", "),
+        "Language: " + (data.get("language") || ""),
         "",
         data.get("details") || "",
       ].join("\n");
 
-      var mailto = form.dataset.fallbackEmail || document.querySelector('a[href^="mailto:"]');
-      var address = typeof mailto === "string" ? mailto : mailto && mailto.getAttribute("href").slice(7);
-      if (!address) return;
+      var mailto = document.querySelector('a[href^="mailto:"]');
+      if (!mailto) return;
 
       window.location.href =
-        "mailto:" + address +
-        "?subject=" + encodeURIComponent("Estimate request from the website") +
+        "mailto:" + mailto.getAttribute("href").slice(7) +
+        "?subject=" + encodeURIComponent(data.get("_subject") || "") +
         "&body=" + encodeURIComponent(body);
 
-      say("Opening your email app — press send and we will get it.", true);
+      say(text.mailto || "", true);
       return;
     }
 
-    e.preventDefault();
-    if (button) { button.disabled = true; button.textContent = "Sending…"; }
+    if (button) { button.disabled = true; button.textContent = text.sending || ""; }
     say("", true);
 
     fetch(action, {
@@ -104,13 +112,13 @@
       .then(function (res) {
         if (!res.ok) throw new Error("bad status " + res.status);
         form.reset();
-        say("Thanks — we have got it, and we will be in touch shortly.", true);
+        say(text.ok || "", true);
       })
       .catch(function () {
-        say("That did not send. Please call us instead — it is the fastest way to reach us.", false);
+        say(text.fail || "", false);
       })
       .finally(function () {
-        if (button) { button.disabled = false; button.textContent = "Send request"; }
+        if (button) { button.disabled = false; button.textContent = text.submit || ""; }
       });
   });
 })();

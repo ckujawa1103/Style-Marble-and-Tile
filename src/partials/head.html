@@ -5,6 +5,12 @@
   <meta name="robots" content="{{ page.robots }}">
   <link rel="canonical" href="{{ page.canonical }}">
 
+  <!-- Each language points at the other, so Google serves the right one and
+       does not read the two as duplicate pages. -->
+  <link rel="alternate" hreflang="{{ lang }}" href="{{ page.canonical }}">
+  <link rel="alternate" hreflang="{{ page.alternateLang }}" href="{{ page.alternate }}">
+  <link rel="alternate" hreflang="x-default" href="{{ page.xDefault }}">
+
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="{{ business.name }}">
   <meta property="og:title" content="{{ page.title }}">

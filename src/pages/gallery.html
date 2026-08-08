@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{ lang }}">
 <head>
 {{> head }}
 </head>
@@ -10,12 +10,9 @@
 
   <section class="page-head">
     <div class="wrap">
-      <p class="eyebrow">Gallery</p>
-      <h1>Recent projects</h1>
-      <p class="lede">
-        Kitchens, bathrooms, backsplashes, and outdoor stone from around
-        {{ business.address.locality }} and the East End.
-      </p>
+      <p class="eyebrow">{{ t.galleryEyebrow }}</p>
+      <h1>{{ t.galleryTitle }}</h1>
+      <p class="lede">{{ t.galleryLede }}</p>
     </div>
   </section>
 

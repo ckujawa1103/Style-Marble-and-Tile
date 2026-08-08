@@ -1,0 +1,221 @@
+{
+  "_comment": [
+    "Spanish translations of the business content in site.config.json.",
+    "",
+    "This file only OVERRIDES translatable text — anything not listed here falls",
+    "back to the English value, which is what you want for the phone number, the",
+    "address, the hours, and the photo filenames.",
+    "",
+    "The shapes must line up with site.config.json: services, differentiators and",
+    "faq are matched BY POSITION, so if you add a service in English, add one here",
+    "in the same place. The build checks the counts and fails if they drift.",
+    "",
+    "Register is 'usted' throughout — this is a business talking to a customer.",
+    "Vocabulary leans to the Spanish spoken by the Latin American communities on",
+    "the East End rather than to Spain: 'encimeras' not 'mesadas', and trade words",
+    "that customers actually use in English ('backsplash', 'bluestone') are left",
+    "alone rather than translated into something nobody says on a job site."
+  ],
+
+  "business": {
+    "tagline": "Fabricantes de mármol, granito y cuarzo en el East End.",
+    "intro": "Style Marble and Tile es un taller de fabricación de superficies duras en Hampton Bays, trabajando en el East End desde 1987. Cortamos e instalamos encimeras de cocina, topes de tocador, backsplashes, chimeneas, bordes de piscina y encimeras para asador en mármol, granito, cuarzo, piedra caliza, ónix, bluestone y superficie sólida — y también suministramos el azulejo que los acompaña."
+  },
+
+  "site": {
+    "description": "Fabricación e instalación de encimeras de mármol, granito y cuarzo, y colocación de azulejo en Hampton Bays, NY. Al servicio del East End de Long Island desde 1987. Presupuestos gratis."
+  },
+
+  "materials": [
+    "Mármol",
+    "Granito",
+    "Cuarzo",
+    "Cuarcita",
+    "Piedra caliza",
+    "Ónix",
+    "Pizarra",
+    "Bluestone",
+    "Corian y superficie sólida",
+    "Azulejo de cerámica y porcelanato"
+  ],
+
+  "services": [
+    {
+      "name": "Encimeras de cocina",
+      "summary": "Encimeras de mármol, granito y cuarzo: plantilla, fabricación e instalación.",
+      "description": "El corazón de lo que hacemos. Tomamos la plantilla en el lugar, distribuimos la losa para que el veteado y las uniones queden donde corresponde, cortamos las aberturas para el fregadero y la estufa, y nosotros mismos colocamos las encimeras.",
+      "bullets": [
+        "Mármol, granito, cuarcita, cuarzo y superficie sólida",
+        "Plantilla en el lugar y distribución de la losa",
+        "Aberturas para fregaderos bajo encimera y estufas",
+        "Bordes rectos, redondeados, ogee, a inglete y tipo cascada"
+      ]
+    },
+    {
+      "name": "Topes de tocador y baños",
+      "summary": "Topes de tocador, paredes de ducha, bordes, nichos y bancos en piedra y azulejo.",
+      "description": "Piedra y azulejo para todo el baño — topes de tocador cortados a la medida de su lavamanos, paredes y bases de ducha con azulejo, bordes impermeabilizados, nichos empotrados y bancos integrados.",
+      "bullets": [
+        "Topes de tocador con lavamanos bajo encimera o tipo vasija",
+        "Duchas, contornos de tina y baños completos en azulejo",
+        "Nichos empotrados, bancos y bordes",
+        "Umbrales y alféizares a juego"
+      ]
+    },
+    {
+      "name": "Backsplashes y azulejo de pared",
+      "summary": "Backsplashes tipo subway, mosaico, artesanales y de losa completa.",
+      "description": "El detalle que uno mira todos los días. Distribuciones planeadas alrededor de tomacorrientes y ventanas, los cortes fuera de la línea de vista y juntas parejas de un extremo al otro. Backsplashes de losa completa cortados del mismo material que sus encimeras.",
+      "bullets": [
+        "Diseños tipo subway, espiga y mosaico",
+        "Backsplashes de losa a altura completa",
+        "Azulejo artesanal y zellige",
+        "Paredes de losa interiores y paredes decorativas"
+      ]
+    },
+    {
+      "name": "Azulejo y pisos",
+      "summary": "Suministramos el azulejo además de instalarlo.",
+      "description": "Cerámica, porcelanato y piedra natural para pisos, paredes y techos — suministrado e instalado. Lo ayudamos con las preguntas de color y distribución y le llevamos muestras, para que no elija un piso mirando una pantalla.",
+      "bullets": [
+        "Azulejo suministrado además de instalado",
+        "Cerámica, porcelanato y piedra natural",
+        "Azulejo de formato grande y pisos de losa",
+        "Preparación de la base, aislamiento de grietas y pisos radiantes"
+      ]
+    },
+    {
+      "name": "Chimeneas y fabricación a medida",
+      "summary": "Revestimientos, hogares, umbrales, alféizares y piezas únicas cortadas a medida.",
+      "description": "Fabricación dimensional en superficies duras para las piezas que no vienen hechas. Una parte es trabajo de máquina y otra es trabajo a mano — las molduras delicadas se cortan a mano porque una máquina no las puede hacer.",
+      "bullets": [
+        "Lavamanos y bateas talladas en la propia losa",
+        "Revestimientos de chimenea y hogares",
+        "Paredes, pisos y techos de losa interiores",
+        "Umbrales, alféizares, mesas y barras"
+      ]
+    },
+    {
+      "name": "Cocinas exteriores y bordes de piscina",
+      "summary": "Encimeras para asador, bordes de piscina y piedra de patio hechos para los inviernos del East End.",
+      "description": "Los ciclos de hielo y deshielo aquí son duros con la piedra exterior. Especificamos y colocamos material que lo aguanta — encimeras para asador y cocinas exteriores, bordes de piscina y azulejo de línea de agua, y patios y caminos de bluestone.",
+      "bullets": [
+        "Encimeras para asador y cocinas exteriores",
+        "Bordes de piscina y azulejo de línea de agua",
+        "Patios, caminos y escalones de bluestone",
+        "Material y colocación aptos para hielo y deshielo"
+      ]
+    }
+  ],
+
+  "differentiators": [
+    {
+      "title": "Nosotros mismos lo fabricamos",
+      "body": "La plantilla, la fabricación y la instalación son todas nuestras. Nada se pierde en el traspaso entre un fabricante y un instalador que nunca se conocieron, y si algo hay que ajustar el día de la instalación, los que lo cortaron están ahí presentes."
+    },
+    {
+      "title": "En el East End desde 1987",
+      "body": "Casi cuatro décadas trabajando la piedra en esta punta de la isla. Sabemos qué materiales aguantan en una casa que pasa medio invierno vacía y se usa a full todo el verano, y cuáles solo se ven bien dos años — y se lo decimos antes de que compre."
+    },
+    {
+      "title": "El trabajo a mano se sigue haciendo a mano",
+      "body": "La mayor parte de una encimera es trabajo de máquina, y está bien — las máquinas son precisas. Pero las molduras delicadas a medida se cortan a mano, porque es la única forma de que salgan bien."
+    },
+    {
+      "title": "Con licencia, seguro y permisos",
+      "body": "Totalmente asegurados y con licencia, y con permisos en cada municipio donde trabajamos. Aquí eso importa más que en otros lados — los códigos de los pueblos y villas del East End son estrictos, y un contratista sin permiso en su zona puede frenar un trabajo por semanas."
+    }
+  ],
+
+  "faq": [
+    {
+      "q": "¿En qué zonas trabajan?",
+      "a": "Estamos en Hampton Bays y trabajamos por todo el South Fork y el North Fork — Southampton, Westhampton, Quogue, Bridgehampton, Sag Harbor, East Hampton, Montauk, Riverhead y los pueblos de alrededor. Si su pueblo no está en esa lista, llame y pregunte."
+    },
+    {
+      "q": "¿Venden azulejo o solamente lo instalan?",
+      "a": "Las dos cosas. Puede comprarnos el material, podemos instalar material que compró en otro lado, o las dos cosas juntas."
+    },
+    {
+      "q": "¿Pueden fabricar una losa que compré en otro lugar?",
+      "a": "Sí. Fabricamos e instalamos una losa que usted ya compró, y también podemos acompañarlo a los depósitos y ayudarlo a elegir una."
+    },
+    {
+      "q": "¿Cuál es la diferencia entre mármol, cuarcita y cuarzo?",
+      "a": "El mármol es piedra natural que se marca con los ácidos y toma pátina con el tiempo — hermoso, pero exige cuidado. La cuarcita es natural y mucho más dura, así que resiste las marcas y los rayones. El cuarzo es fabricado y no poroso, lo que lo hace el de menor mantenimiento de los tres. Le explicamos las ventajas y desventajas según cómo usa realmente su cocina."
+    },
+    {
+      "q": "¿Cuánto va a tardar mi trabajo y cuánto va a costar?",
+      "a": "Cada trabajo es distinto, y la época del año pesa mucho aquí — la temporada que mueve al East End afecta tanto la programación como los precios. En vez de dar una cifra que no podamos sostener, definimos el tiempo y el costo junto con usted como parte del presupuesto, una vez que vimos el trabajo."
+    },
+    {
+      "q": "¿Tienen licencia y seguro?",
+      "a": "Sí — totalmente asegurados y con licencia, y con permisos en cada municipio donde trabajamos. Si su villa o pueblo exige trámites antes de empezar, nosotros los hacemos."
+    },
+    {
+      "q": "¿Los presupuestos son gratis?",
+      "a": "Sí. Mándenos los detalles del trabajo por la página de contacto o llame al taller al (631) 728-0049 y coordinamos una visita."
+    }
+  ],
+
+  "gallery": {
+    "projects": [
+      {
+        "title": "Cocina y despensa en Sag Harbor",
+        "material": "Mármol Calacatta Paonazzo",
+        "blurb": "Isla, encimeras, un backsplash de losa a altura completa y un revestimiento de chimenea a juego, todo cortado del mismo Calacatta Paonazzo para que el veteado siga a través del ambiente.",
+        "photos": [
+          { "alt": "Isla de mármol Calacatta Paonazzo con fregadero integrado en una cocina de Sag Harbor, con backsplash de losa a juego detrás de la estufa" },
+          { "alt": "Backsplash de losa Calacatta Paonazzo a altura completa detrás de una estufa con detalles en bronce, con llave de agua empotrada en la piedra" },
+          { "alt": "Revestimiento y hogar de chimenea en mármol Calacatta Paonazzo, con el interior en ladrillo tipo espiga" }
+        ]
+      },
+      {
+        "title": "Un tocador cortado de una sola losa",
+        "location": "En el taller de Hampton Bays",
+        "material": "Cuarcita",
+        "blurb": "Ingletado en cada esquina para que el veteado siga sin cortes alrededor de la pieza, con la batea tallada directamente en el tope y el cajón enchapado en la misma piedra.",
+        "photos": [
+          { "alt": "Batea rectangular tallada directamente en el tope de piedra de un tocador, en el piso del taller de fabricación" },
+          { "alt": "Tocador de piedra en fabricación con el cajón enchapado en piedra abierto" },
+          { "alt": "Esquina ingletada de un tocador de piedra, cortada para que el veteado siga sin cortes por el borde" }
+        ]
+      },
+      {
+        "title": "Una casa de estructura de madera en el East End",
+        "material": "Piedra, azulejo y losa en toda la casa",
+        "blurb": "Trabajo en toda la casa, en una de las obras más interesantes en las que participamos — una pared de chimenea en piedra y una mesa de losa en la sala, una barra de piedra estriada y azulejo desde la cocina hasta los baños.",
+        "photos": [
+          { "alt": "Pared de chimenea en piedra y mesa de centro de losa con canto natural en una sala con estructura de madera" },
+          { "alt": "Barra empotrada con panel posterior de piedra estriada, encimera de piedra y estantes de roble blanco" },
+          { "alt": "Primer plano de piedra estriada, con cada acanaladura cortada en la cara de la losa" },
+          { "alt": "Pared en arco de azulejo iridiscente azul verdoso sobre una barra oscura, con luz bajo el estante" },
+          { "alt": "Encimera de barra en piedra oscura con terminación en cascada que baja sobre un panel forrado en cuero" },
+          { "alt": "Backsplash de azulejo color crema y encimera de piedra oscura junto a una estufa de acero inoxidable" },
+          { "alt": "Tocador doble en piedra gris verdosa con backsplash de losa a juego y lavamanos bajo encimera" }
+        ]
+      },
+      {
+        "title": "Toilette y baño en mármol",
+        "material": "Mármol oscuro veteado y mármol gris",
+        "blurb": "Una batea tallada de la misma losa oscura que el tope del tocador, contra una pared de mosaico de vidrio — y al lado una ducha con el piso cortado de una sola pieza de mármol gris.",
+        "photos": [
+          { "alt": "Tocador de toilette en mármol oscuro con una batea tallada de la misma losa" },
+          { "alt": "Primer plano de una batea tallada en mármol oscuro veteado, con desagüe pulido" },
+          { "alt": "Tocador y batea de mármol oscuro contra una pared de mosaico de vidrio en rojo y verde azulado" },
+          { "alt": "Piso de mármol gris de formato grande recorriendo un toilette" },
+          { "alt": "Ducha de mármol con paredes de azulejo tipo subway, banco de esquina y piso cortado de una sola losa" }
+        ]
+      },
+      {
+        "title": "Vetas alineadas: una ducha de losa completa",
+        "material": "Mármol rayado de corte vetado",
+        "blurb": "Paredes y techo, con el veteado calzado para que siga derecho por cada esquina y por arriba. Este fue todo un desafío.",
+        "photos": [
+          { "alt": "Ducha revestida en mármol rayado de corte vetado con nicho empotrado y chorros de pared, con el veteado continuando sin cortes por la esquina" },
+          { "alt": "Losa de mármol rayado que continúa por el techo de la ducha, con regaderas empotradas en la piedra" }
+        ]
+      }
+    ]
+  }
+}

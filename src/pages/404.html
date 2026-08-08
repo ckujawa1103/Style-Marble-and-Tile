@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{ lang }}">
 <head>
 {{> head }}
 </head>
@@ -10,14 +10,11 @@
   <section class="page-head">
     <div class="wrap wrap-narrow center">
       <p class="eyebrow">404</p>
-      <h1>That page is not here</h1>
-      <p class="lede">
-        The link may be old or mistyped. The pages below cover just about
-        everything on the site.
-      </p>
+      <h1>{{ t.notFoundTitle }}</h1>
+      <p class="lede">{{ t.notFoundLede }}</p>
       <p class="hero-actions">
-        <a class="btn btn-lg" href="{{ u.home }}">Home</a>
-        <a class="btn btn-lg btn-ghost" href="{{ u.contact }}">Get an estimate</a>
+        <a class="btn btn-lg" href="{{ u.home }}">{{ t.home }}</a>
+        <a class="btn btn-lg btn-ghost" href="{{ u.contact }}">{{ t.ctaEstimate }}</a>
       </p>
     </div>
   </section>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{ lang }}">
 <head>
 {{> head }}
 </head>
@@ -10,12 +10,9 @@
 
   <section class="page-head">
     <div class="wrap">
-      <p class="eyebrow">Services</p>
-      <h1>Stone and tile work, start to finish</h1>
-      <p class="lede">
-        Everything below is done by the same crew that comes out to template the
-        job — no subcontracted fabrication, no handoff where the details get lost.
-      </p>
+      <p class="eyebrow">{{ t.servicesEyebrow }}</p>
+      <h1>{{ t.servicesTitle }}</h1>
+      <p class="lede">{{ t.servicesLede }}</p>
     </div>
   </section>
 
@@ -30,37 +27,32 @@
   <section class="band band-alt">
     <div class="wrap wrap-narrow">
       <header class="section-head">
-        <h2>How a job runs</h2>
+        <h2>{{ t.howJobRuns }}</h2>
       </header>
       <ol class="steps">
         <li>
-          <h3>Walk the job</h3>
-          <p>We come look at the space, take rough measurements, and talk through material and layout.</p>
+          <h3>{{ t.step1Title }}</h3>
+          <p>{{ t.step1Body }}</p>
         </li>
         <li>
-          <h3>Written estimate</h3>
-          <p>
-            Material, square footage, and labor broken out separately. Every job
-            is different and the season affects both what it costs and when we
-            can get to it, so we work the time and the price out with you here
-            rather than quoting a number before we have seen it.
-          </p>
+          <h3>{{ t.step2Title }}</h3>
+          <p>{{ t.step2Body }}</p>
         </li>
         <li>
-          <h3>Permits, if your township needs them</h3>
-          <p>We are licensed, insured, and permitted across the local municipalities, so filings get handled before anyone shows up rather than halfway through.</p>
+          <h3>{{ t.step3Title }}</h3>
+          <p>{{ t.step3Body }}</p>
         </li>
         <li>
-          <h3>Template</h3>
-          <p>Once cabinets or substrate are set, we template to the actual space — not to the plans.</p>
+          <h3>{{ t.step4Title }}</h3>
+          <p>{{ t.step4Body }}</p>
         </li>
         <li>
-          <h3>Fabricate</h3>
-          <p>Slab layout for veining and seams, cutouts, and edge profiles in the shop.</p>
+          <h3>{{ t.step5Title }}</h3>
+          <p>{{ t.step5Body }}</p>
         </li>
         <li>
-          <h3>Install</h3>
-          <p>Set, seamed, sealed, and cleaned up. We walk it with you before we leave.</p>
+          <h3>{{ t.step6Title }}</h3>
+          <p>{{ t.step6Body }}</p>
         </li>
       </ol>
     </div>

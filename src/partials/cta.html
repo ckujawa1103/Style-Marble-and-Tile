@@ -1,12 +1,12 @@
     <section class="band cta">
       <div class="wrap cta-inner">
         <div>
-          <h2>Planning a kitchen, bath, or patio?</h2>
-          <p>Free estimates across the East End. Tell us about the job and we will come look at it.</p>
+          <h2>{{ t.ctaBandTitle }}</h2>
+          <p>{{ t.ctaBandBody }}</p>
         </div>
         <div class="cta-actions">
-          <a class="btn btn-lg" href="{{ u.contact }}">Get a free estimate</a>
-          <a class="btn btn-lg btn-ghost" href="{{ business.telHref }}">Call {{ business.phone }}</a>
+          <a class="btn btn-lg" href="{{ u.contact }}">{{ t.ctaEstimate }}</a>
+          <a class="btn btn-lg btn-ghost" href="{{ business.telHref }}">{{ t.ctaCall }} {{ business.phone }}</a>
         </div>
       </div>
     </section>
