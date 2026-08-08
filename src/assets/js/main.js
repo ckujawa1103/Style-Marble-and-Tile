@@ -73,7 +73,7 @@
         "Name: " + (data.get("name") || ""),
         "Phone: " + (data.get("phone") || ""),
         "Email: " + (data.get("email") || ""),
-        "Town: " + (data.get("town") || ""),
+        "Where: " + (data.get("where") || ""),
         "Job: " + jobs,
         "",
         data.get("details") || "",

@@ -24,7 +24,7 @@ const SRC = join(root, "src");
 const OUT = join(root, "dist");
 
 const config = JSON.parse(await readFile(join(root, "site.config.json"), "utf8"));
-const { site, business, forms, analytics, serviceArea, services, differentiators, faq } = config;
+const { site, business, forms, analytics, serviceArea, services, differentiators, faq, materials } = config;
 const reviews = config.reviews.items;
 const gallery = config.gallery.items;
 
@@ -118,6 +118,36 @@ const differentiatorBlocks = differentiators
 
 const areaList = serviceArea.map((a) => `<li>${esc(a)}</li>`).join("\n          ");
 
+const materialList = materials.map((m) => `<li>${esc(m)}</li>`).join("\n          ");
+
+// Generated from the config so renaming a service cannot leave a dead anchor
+// in the footer.
+const footerServices = services
+  .map(
+    (svc) =>
+      `<li><a href="${esc(url("services/#" + svc.slug))}">${esc(svc.name)}</a></li>`,
+  )
+  .join("\n            ");
+
+// The licence number is a trust signal, but only if we actually have one —
+// an empty line in the footer looks worse than no line.
+const licenseBlock = b.licenseNumber
+  ? `<p class="footer-license">${esc(b.licenseNumber)}</p>`
+  : "";
+
+const socialBlock = (() => {
+  const links = [
+    ["Facebook", b.links.facebook],
+    ["Instagram", b.links.instagram],
+    ["Yelp", b.links.yelp],
+    ["Google", b.links.googleProfile],
+  ].filter(([, href]) => href && !href.includes("YOUR_"));
+  if (!links.length) return "";
+  return `<ul class="social">${links
+    .map(([name, href]) => `<li><a href="${esc(href)}" rel="noopener">${esc(name)}</a></li>`)
+    .join("")}</ul>`;
+})();
+
 const faqBlocks = faq
   .map(
     (item) => `
@@ -204,7 +234,6 @@ const localBusinessSchema = {
   telephone: b.phone,
   email: b.email,
   priceRange: b.priceRange,
-  foundingDate: b.founded,
   address: {
     "@type": "PostalAddress",
     streetAddress: b.address.street,
@@ -239,8 +268,15 @@ const localBusinessSchema = {
       itemOffered: { "@type": "Service", name: svc.name, description: svc.summary },
     })),
   },
-  sameAs: [b.links.googleProfile, b.links.facebook, b.links.instagram].filter(Boolean),
+  sameAs: [b.links.googleProfile, b.links.facebook, b.links.instagram, b.links.yelp].filter(Boolean),
+  makesOffer: materials.map((m) => ({
+    "@type": "Offer",
+    itemOffered: { "@type": "Product", name: m, category: "Countertop and tile material" },
+  })),
 };
+
+// Only claim a founding year if there is one — a wrong date is worse than none.
+if (b.founded) localBusinessSchema.foundingDate = b.founded;
 
 if (reviews.length) {
   localBusinessSchema.aggregateRating = {
@@ -381,6 +417,10 @@ for (const page of pages) {
       serviceTeasers,
       differentiators: differentiatorBlocks,
       areaList,
+      materials: materialList,
+      footerServices,
+      license: licenseBlock,
+      social: socialBlock,
       areaSentence: esc(serviceAreaSentence),
       faq: faqBlocks,
       reviews: reviewCards,

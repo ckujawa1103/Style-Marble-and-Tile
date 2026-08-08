@@ -333,17 +333,23 @@ p + p { margin-top: 1rem; }
 .area-block { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
 .area-block p { color: var(--slate); margin-top: .75rem; }
 
+/* Plain text columns, deliberately not pill-shaped — rounded chips read as
+   buttons, and these are not clickable. */
 .area-list {
-  list-style: none; padding: 0;
-  display: flex; flex-wrap: wrap; gap: .5rem;
+  list-style: none; padding: 0; margin: 0;
+  columns: 2; column-gap: 2rem;
+  font-size: .95rem;
 }
 .area-list li {
-  background: var(--paper);
-  border: 1px solid var(--line);
-  border-radius: 100px;
-  padding: .32rem .85rem;
-  font-size: .88rem;
+  break-inside: avoid;
+  padding: .22rem 0 .22rem 1.1rem;
+  position: relative;
   color: var(--ink);
+}
+.area-list li::before {
+  content: ""; position: absolute; left: 0; top: .82em;
+  width: 5px; height: 5px; border-radius: 50%;
+  background: var(--bronze); opacity: .65;
 }
 
 /* --- faq ------------------------------------------------------------------ */
@@ -398,6 +404,7 @@ p + p { margin-top: 1rem; }
 }
 .field input:focus, .field textarea:focus { border-color: var(--bronze); outline: none; box-shadow: 0 0 0 3px rgba(138,106,63,.15); }
 .field textarea { resize: vertical; }
+.field-hint { font-size: .84rem; color: var(--slate); margin-top: .1rem; }
 
 .checks { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: .5rem; margin-top: .5rem; }
 .checks label { display: flex; align-items: center; gap: .55rem; font-weight: 400; font-size: .95rem; cursor: pointer; }
@@ -449,13 +456,11 @@ p + p { margin-top: 1rem; }
 .footer-blurb { margin-top: 1rem; font-size: .95rem; max-width: 34ch; }
 .footer-license { margin-top: .85rem; font-size: .82rem; color: #8d857a; }
 
+.social { list-style: none; padding: 0; margin-top: 1.15rem; display: flex; flex-wrap: wrap; gap: 1rem; font-size: .9rem; }
+
 .footer-links { list-style: none; padding: 0; display: grid; gap: .45rem; font-size: .93rem; }
-.footer-area li {
-  background: rgba(255,255,255,.06);
-  border-color: rgba(255,255,255,.12);
-  color: #cdc4b7;
-  font-size: .82rem;
-}
+.footer-area { columns: 1; font-size: .88rem; }
+.footer-area li { color: #b6ada0; }
 
 .footer-base {
   display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between;

@@ -18,10 +18,12 @@
           <a class="btn btn-lg" href="{{ u.contact }}">Get a free estimate</a>
           <a class="btn btn-lg btn-ghost" href="{{ business.telHref }}">Call {{ business.phone }}</a>
         </div>
+        <!-- Keep these to claims that can be backed up. "Licensed & insured" is a
+             good one to add here once the licence number is in site.config.json. -->
         <ul class="hero-trust">
-          <li>Free written estimates</li>
-          <li>Licensed &amp; insured</li>
-          <li>Template, fabricate &amp; install</li>
+          <li>Free estimates</li>
+          <li>Showroom in Hampton Bays</li>
+          <li>We template, fabricate &amp; install</li>
         </ul>
       </div>
     </div>
@@ -52,6 +54,23 @@
   </section>
 
   <section class="band">
+    <div class="wrap area-block">
+      <div>
+        <h2>Come see the material</h2>
+        <p>
+          Stone is hard to choose from a photograph. Our showroom on Montauk
+          Highway has tile and slab on display, and we will give you a straight
+          answer on how each one behaves in a kitchen you actually cook in.
+        </p>
+        <p class="section-more"><a href="{{ business.links.googleMaps }}">{{ business.addressLine }} &rarr;</a></p>
+      </div>
+      <ul class="area-list">
+        {{{ html.materials }}}
+      </ul>
+    </div>
+  </section>
+
+  <section class="band band-alt">
     <div class="wrap">
       <header class="section-head">
         <h2>Recent work</h2>
@@ -64,7 +83,7 @@
     </div>
   </section>
 
-  <section class="band band-alt">
+  <section class="band">
     <div class="wrap">
       <header class="section-head">
         <h2>What people say</h2>
@@ -76,7 +95,7 @@
     </div>
   </section>
 
-  <section class="band">
+  <section class="band band-alt">
     <div class="wrap area-block">
       <div>
         <h2>Where we work</h2>
@@ -92,7 +111,7 @@
     </div>
   </section>
 
-  <section class="band band-alt">
+  <section class="band">
     <div class="wrap wrap-narrow">
       <header class="section-head">
         <h2>Common questions</h2>

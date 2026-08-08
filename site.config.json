@@ -4,31 +4,43 @@
     "changes everywhere on the site — page copy, the footer, the phone links, and",
     "the structured data Google reads.",
     "",
-    "Anything still starting with 'TODO:' is a placeholder that has NOT been filled",
-    "in. `npm run build` prints a warning for each one. Nothing invented here is a",
-    "real detail about the business — the address, phone, hours, and license number",
-    "must come from your uncle before this site goes live."
+    "The contact details below were taken from the business's public listings",
+    "(Yelp, Yahoo Local, Angi, Experience.com, hub.biz) in August 2026. Check them",
+    "against what your uncle actually says before launch — directories go stale.",
+    "",
+    "Anything still starting with 'TODO:' is unfilled; `npm run build` lists them."
   ],
 
   "site": {
-    "url": "TODO: https://stylemarbleandtile.com",
-    "basePath": "",
+    "_comment": [
+      "url is the ORIGIN only (no path). basePath is the subfolder the site is",
+      "served from. On GitHub Pages under a repo name, basePath is that repo name.",
+      "When a real domain is connected: url = https://stylemarbleandtile.com and",
+      "basePath = \"\"."
+    ],
+    "url": "https://ckujawa1103.github.io",
+    "basePath": "/Style-Marble-and-Tile",
     "title": "Style Marble and Tile",
-    "description": "Custom stone and tile in Hampton Bays, NY. Kitchen countertops, bathroom vanities, backsplashes, and tile installation across the East End.",
+    "description": "Marble, granite, and quartz countertop fabrication and tile installation in Hampton Bays, NY. Serving the East End of Long Island since the 1980s. Free estimates.",
     "locale": "en_US"
   },
 
   "business": {
     "name": "Style Marble and Tile",
-    "legalName": "TODO: Style Marble & Tile, Inc.",
-    "tagline": "Stone and tile, cut and set right, on the East End.",
-    "intro": "A Hampton Bays stone and tile shop working on kitchens, baths, and outdoor spaces across the Hamptons and the North Fork — from a single backsplash to a full fabrication-and-install package.",
-    "founded": "TODO: 2005",
-    "licenseNumber": "TODO: Suffolk County Home Improvement License #00000",
-    "phone": "TODO: (631) 555-0100",
-    "email": "TODO: info@stylemarbleandtile.com",
+    "legalName": "Style Marble and Tile, Corp.",
+    "tagline": "A full-service marble, granite, and quartz fabricator on the East End.",
+    "intro": "Style Marble and Tile is a hard-surface fabrication shop and tile showroom in Hampton Bays. We cut and install kitchen countertops, vanity tops, backsplashes, fireplaces, pool coping, and BBQ counters in marble, granite, quartz, limestone, onyx, bluestone, and solid surface — and we carry the tile to go with them.",
+
+    "_founded_note": "Directory listings say the shop started in 1987, but their own copy has said 'in business 30 years' for a while. Confirm the real year and put it here — an accurate 'since XXXX' is a strong trust signal. Left blank so nothing wrong gets published.",
+    "founded": "",
+
+    "_license_note": "Suffolk County Home Improvement License number. Ask for it — displaying it converts skeptical homeowners.",
+    "licenseNumber": "",
+
+    "phone": "(631) 728-0049",
+    "email": "Style.Marble@gmail.com",
     "address": {
-      "street": "TODO: 000 Montauk Highway",
+      "street": "150 E Montauk Hwy, Ste B",
       "locality": "Hampton Bays",
       "region": "NY",
       "postalCode": "11946",
@@ -39,22 +51,24 @@
       "longitude": "-72.5176"
     },
     "hours": [
-      { "days": "Monday – Friday", "opens": "08:00", "closes": "16:00" },
-      { "days": "Saturday", "opens": "09:00", "closes": "13:00" },
+      { "days": "Monday – Friday", "opens": "08:30", "closes": "16:30" },
+      { "days": "Saturday", "opens": "10:00", "closes": "14:00" },
       { "days": "Sunday", "opens": null, "closes": null }
     ],
     "priceRange": "$$",
     "links": {
-      "googleMaps": "TODO: https://maps.google.com/?cid=YOUR_GOOGLE_BUSINESS_ID",
+      "googleMaps": "https://maps.google.com/?q=150+E+Montauk+Hwy+Ste+B,+Hampton+Bays,+NY+11946",
+      "_google_note": "Get these two from the Google Business Profile dashboard once it is claimed. googleReview is the short 'ask for reviews' link Google generates for you.",
       "googleReview": "TODO: https://g.page/r/YOUR_REVIEW_LINK/review",
       "googleProfile": "TODO: https://www.google.com/maps/place/YOUR_BUSINESS",
-      "facebook": "",
-      "instagram": ""
+      "facebook": "https://www.facebook.com/StyleMarbleAndTileCorp/",
+      "instagram": "",
+      "yelp": "https://www.yelp.com/biz/style-marble-and-tile-corp-hampton-bays"
     }
   },
 
   "forms": {
-    "_comment": "Free options: Formspree (formspree.io), Web3Forms, or Basin. Create a form, paste its POST URL here. Until then the form falls back to opening the visitor's email client.",
+    "_comment": "Free options: Formspree (formspree.io), Web3Forms, or Basin. Create a form, paste its POST URL here. Until then the form falls back to opening the visitor's email client addressed to the business.",
     "endpoint": "TODO: https://formspree.io/f/YOUR_FORM_ID"
   },
 
@@ -62,6 +76,19 @@
     "_comment": "Optional. Plausible is privacy-friendly and needs no cookie banner. Leave blank for none.",
     "plausibleDomain": ""
   },
+
+  "materials": [
+    "Marble",
+    "Granite",
+    "Quartz",
+    "Quartzite",
+    "Limestone",
+    "Onyx",
+    "Slate",
+    "Bluestone",
+    "Corian & solid surface",
+    "Ceramic & porcelain tile"
+  ],
 
   "serviceArea": [
     "Hampton Bays",
@@ -84,72 +111,72 @@
     {
       "slug": "kitchen-countertops",
       "name": "Kitchen Countertops",
-      "summary": "Marble, granite, and quartz countertops templated, fabricated, and installed.",
-      "description": "We template the job on site, fabricate to your slab layout, and set the tops with the seams and overhangs where they belong. Edge profiles, undermount sink cutouts, cooktop cutouts, and backsplash to match.",
+      "summary": "Marble, granite, and quartz tops templated, fabricated, and installed.",
+      "description": "The core of what we do. We template on site, lay out the slab so the veining and seams fall where they should, cut the sink and cooktop openings, and set the tops ourselves.",
       "bullets": [
-        "Marble, granite, quartzite, and engineered quartz",
+        "Marble, granite, quartzite, quartz, and solid surface",
         "On-site templating and slab layout",
         "Undermount sink and cooktop cutouts",
         "Eased, bullnose, ogee, mitered, and waterfall edges"
       ]
     },
     {
-      "slug": "bathroom-vanities-and-showers",
-      "name": "Bathroom Vanities & Showers",
-      "summary": "Vanity tops, shower surrounds, curbs, niches, and benches in stone and tile.",
-      "description": "Full bathroom stone and tile work — vanity tops with integrated or undermount basins, tiled shower walls and pans, waterproofed curbs, recessed niches, and built-in benches.",
+      "slug": "vanity-tops-and-baths",
+      "name": "Vanity Tops & Bathrooms",
+      "summary": "Vanity tops, shower walls, curbs, niches, and benches in stone and tile.",
+      "description": "Stone and tile for the whole bathroom — vanity tops cut to your basin, tiled shower walls and pans, waterproofed curbs, recessed niches, and built-in benches.",
       "bullets": [
-        "Vanity tops and integrated backsplashes",
-        "Tiled showers with proper waterproofing",
+        "Vanity tops with undermount or vessel basins",
+        "Tiled showers, tub surrounds, and wet rooms",
         "Recessed niches, benches, and curbs",
-        "Steam showers and full wet rooms"
+        "Matching thresholds and window sills"
       ]
     },
     {
-      "slug": "backsplashes",
-      "name": "Backsplashes",
-      "summary": "Subway, mosaic, slab, and hand-made tile set clean and level.",
-      "description": "The detail people look at every day. Layouts planned around outlets and windows, cuts kept off the sightlines, and grout joints that stay consistent from end to end.",
+      "slug": "backsplashes-and-wall-tile",
+      "name": "Backsplashes & Wall Tile",
+      "summary": "Subway, mosaic, handmade, and full-height slab backsplashes.",
+      "description": "The detail you look at every day. Layouts planned around outlets and windows, cuts kept off the sightlines, and joints that stay consistent end to end. Full-height slab backsplashes cut from the same material as your tops.",
       "bullets": [
         "Subway, herringbone, and mosaic layouts",
         "Full-height slab backsplashes",
         "Handmade and zellige tile",
-        "Outlet and window trim detailing"
+        "Interior slab walls and feature walls"
       ]
     },
     {
-      "slug": "tile-installation",
-      "name": "Floor & Wall Tile",
-      "summary": "Porcelain, ceramic, and natural stone tile for floors and walls.",
-      "description": "Substrate prep, crack isolation, and heated-floor systems where they make sense — because tile fails from what is under it far more often than from the tile itself.",
+      "slug": "tile-and-flooring",
+      "name": "Tile & Flooring",
+      "summary": "A Hampton Bays showroom that sells the tile and installs it too.",
+      "description": "Come look at material in person instead of guessing from a screen. We carry ceramic, porcelain, and natural stone, help with the color and layout questions, and install what you pick — floors, walls, and ceilings.",
       "bullets": [
-        "Porcelain, ceramic, and natural stone",
-        "Large-format tile and slab",
-        "Radiant heated floor systems",
-        "Substrate prep and crack isolation"
+        "Showroom with tile and slab on display",
+        "Ceramic, porcelain, and natural stone",
+        "Large-format tile and slab flooring",
+        "Substrate prep, crack isolation, and heated floors"
       ]
     },
     {
-      "slug": "custom-fabrication",
-      "name": "Custom Fabrication",
-      "summary": "Fireplace surrounds, hearths, thresholds, window sills, and one-off pieces.",
-      "description": "Cut-to-size stone for the pieces that do not come off a shelf — mantels and surrounds, saddles and thresholds, sills, shelving, table tops, and bar tops.",
+      "slug": "fireplaces-and-custom-fabrication",
+      "name": "Fireplaces & Custom Fabrication",
+      "summary": "Surrounds, hearths, thresholds, sills, and cut-to-size one-offs.",
+      "description": "Hard-surface dimensional fabrication for the pieces that do not come off a shelf. Some of it is machine work and some of it is hand work — the delicate trim pieces get cut by hand because a machine cannot do them.",
       "bullets": [
         "Fireplace surrounds and hearths",
+        "Custom trim pieces cut by hand",
         "Thresholds, saddles, and window sills",
-        "Table tops and bar tops",
-        "Cut-to-size and template work"
+        "Table tops, bar tops, and cut-to-size slab"
       ]
     },
     {
-      "slug": "outdoor-stone",
-      "name": "Outdoor Stone & Pool Coping",
-      "summary": "Patios, pool coping, and outdoor kitchens built for East End winters.",
-      "description": "Freeze-thaw on the East End is hard on outdoor stone. We spec and set material that handles it — bluestone and travertine patios, pool coping and waterline tile, and outdoor kitchen tops.",
+      "slug": "outdoor-kitchens-and-pool-coping",
+      "name": "Outdoor Kitchens & Pool Coping",
+      "summary": "BBQ counters, pool coping, and patio stone built for East End winters.",
+      "description": "Freeze-thaw out here is hard on outdoor stone. We spec and set material that handles it — BBQ and outdoor kitchen counters, pool coping and waterline tile, and bluestone patios and walkways.",
       "bullets": [
+        "BBQ and outdoor kitchen counters",
         "Pool coping and waterline tile",
-        "Bluestone and travertine patios",
-        "Outdoor kitchen countertops",
+        "Bluestone patios, walkways, and steps",
         "Freeze-thaw appropriate material and setting"
       ]
     }
@@ -157,50 +184,55 @@
 
   "differentiators": [
     {
-      "title": "One shop, start to finish",
-      "body": "Template, fabrication, and installation are the same crew. Nothing gets lost in a handoff between a fabricator and an installer who have never met."
+      "title": "We fabricate it ourselves",
+      "body": "Templating, fabrication, and installation are all in house. Nothing gets lost in a handoff between a fabricator and an installer who have never met, and if something needs adjusting on install day, the people who cut it are standing there."
     },
     {
-      "title": "We work on the East End",
-      "body": "Local to Hampton Bays. That means real timelines on a Hamptons job calendar, and someone who picks up the phone after the install."
+      "title": "A showroom you can walk into",
+      "body": "Stone is hard to choose from a photograph. Come to the shop on Montauk Highway, put your hands on the material, and get a straight answer on how marble, quartzite, and quartz actually differ once they are in a kitchen you cook in."
     },
     {
-      "title": "Straight estimates",
-      "body": "A written estimate with the material, the square footage, and the labor broken out — so you can see what you are paying for before anyone cuts a slab."
+      "title": "The hand work still gets done by hand",
+      "body": "Most of a countertop is machine work, and that is fine — machines are accurate. But the delicate custom trim pieces get cut by hand, because that is the only way they come out right."
     }
   ],
 
   "faq": [
     {
       "q": "What areas do you serve?",
-      "a": "We are based in Hampton Bays and work across the South Fork and North Fork — Southampton, Westhampton, Quogue, Bridgehampton, Sag Harbor, East Hampton, Montauk, Riverhead, and the surrounding hamlets."
+      "a": "We are based in Hampton Bays and work across the South Fork and North Fork — Southampton, Westhampton, Quogue, Bridgehampton, Sag Harbor, East Hampton, Montauk, Riverhead, and the surrounding hamlets. If your town is not on that list, call and ask."
     },
     {
-      "q": "Do you supply the stone, or can I bring my own slab?",
-      "a": "Either. We can walk the slab yards with you and help you pick material, or fabricate and install a slab you have already bought."
+      "q": "Do you sell tile, or only install it?",
+      "a": "Both. We run a showroom at 150 E Montauk Hwy with tile and slab on display, so you can buy material from us, have us install it, or do both."
     },
     {
-      "q": "How long does a countertop job take?",
-      "a": "Typically about one to two weeks from template to install, depending on material availability. We give you the schedule in writing with the estimate."
+      "q": "Can you fabricate a slab I bought somewhere else?",
+      "a": "Yes. We will fabricate and install a slab you have already bought, and we can also walk the slab yards with you and help you pick one."
     },
     {
       "q": "What is the difference between marble, quartzite, and quartz?",
-      "a": "Marble is a natural stone that etches with acid and patinas over time — beautiful, but it asks something of you. Quartzite is natural and much harder, so it resists etching and scratching. Quartz is engineered and non-porous, which makes it the lowest-maintenance of the three. We will walk you through the tradeoffs for how you actually use your kitchen."
+      "a": "Marble is natural stone that etches with acid and patinas over time — beautiful, but it asks something of you. Quartzite is natural and much harder, so it resists etching and scratching. Quartz is engineered and non-porous, which makes it the lowest-maintenance of the three. Come in and we will walk you through the tradeoffs for how you actually use your kitchen."
+    },
+    {
+      "q": "How long does a countertop job take?",
+      "a": "Typically about one to two weeks from template to install, depending on material availability. You get the schedule in writing with the estimate."
     },
     {
       "q": "Do you offer free estimates?",
-      "a": "Yes. Send through the form on the contact page or call, and we will set up a time to look at the job."
+      "a": "Yes. Send the job details through the contact page or call the shop at (631) 728-0049 and we will set up a time to look at it."
     }
   ],
 
   "reviews": {
     "_comment": [
-      "IMPORTANT: leave this list empty until you have real reviews with real names.",
-      "Do not write testimonials. Fake reviews are illegal under the FTC's rule on",
-      "consumer reviews (16 CFR Part 465), and Google delists businesses for them.",
+      "IMPORTANT: only put REAL reviews here, copied verbatim, with the reviewer's",
+      "real name. Do not write testimonials. Fake reviews are illegal under the",
+      "FTC's rule on consumer reviews (16 CFR Part 465) and Google delists",
+      "businesses for them.",
       "",
-      "Fill it in by copying real Google reviews once they come in:",
-      "  { \"author\": \"First L.\", \"rating\": 5, \"date\": \"2026-05-02\", \"text\": \"...\", \"source\": \"Google\" }"
+      "There are real 5-star reviews on Yelp and Angi — copy them across as:",
+      "  { \"author\": \"First L.\", \"rating\": 5, \"date\": \"2026-05-02\", \"text\": \"...\", \"source\": \"Yelp\" }"
     ],
     "items": []
   },
@@ -208,9 +240,10 @@
   "gallery": {
     "_comment": [
       "Drop photos into src/assets/img/gallery/ and list them here.",
-      "Real project photos are the single highest-value thing you can add to this",
-      "site. Phone photos in good daylight are fine. Write a real 'alt' for each —",
-      "it is what a screen reader announces and what Google Images indexes."
+      "The Facebook page already has project photos — pulling the best dozen across",
+      "is the single highest-value thing you can add to this site.",
+      "Write a real 'alt' for each: it is what a screen reader announces and what",
+      "Google Images indexes."
     ],
     "items": []
   }

@@ -7,7 +7,8 @@
           <span class="brand-text"><strong>Style Marble</strong><em>and Tile</em></span>
         </a>
         <p class="footer-blurb">{{ business.tagline }}</p>
-        <p class="footer-license">{{ business.licenseNumber }}</p>
+        {{{ html.license }}}
+        {{{ html.social }}}
       </div>
 
       <div class="footer-col">
@@ -25,12 +26,7 @@
       <div class="footer-col">
         <h2>Services</h2>
         <ul class="footer-links">
-          <li><a href="{{ u.services }}#kitchen-countertops">Kitchen countertops</a></li>
-          <li><a href="{{ u.services }}#bathroom-vanities-and-showers">Bathrooms &amp; showers</a></li>
-          <li><a href="{{ u.services }}#backsplashes">Backsplashes</a></li>
-          <li><a href="{{ u.services }}#tile-installation">Floor &amp; wall tile</a></li>
-          <li><a href="{{ u.services }}#custom-fabrication">Custom fabrication</a></li>
-          <li><a href="{{ u.services }}#outdoor-stone">Outdoor stone &amp; pool coping</a></li>
+            {{{ html.footerServices }}}
         </ul>
       </div>
 

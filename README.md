@@ -9,17 +9,31 @@ Built to do three jobs: **get found** in local search, **show the work**, and
 
 ## Where things stand
 
-The site is built and works end to end. What it does *not* yet have is real
-information about the business. Every one of those gaps is marked in
-`site.config.json` with `TODO:`, and `npm run build` lists them:
+The site is built, and the business details are real — name, address, phone,
+email, hours, services, and materials were taken from the company's public
+listings (Yelp, Yahoo Local, Angi, Experience.com, hub.biz) in August 2026.
+**Check them against what the shop actually says before launch**; directory
+listings go stale, and one of them disagreed with another about opening time.
+
+Three things are still unfilled, and `npm run build` lists them:
 
 ```
-⚠  11 placeholders still unfilled in site.config.json
+⚠  3 placeholders still unfilled in site.config.json
+     business.links.googleReview     from the Google Business Profile
+     business.links.googleProfile    from the Google Business Profile
+     forms.endpoint                  from Formspree or similar
 ```
 
-Nothing in this repository is a real detail about the business — the phone
-number, address, hours, and license number are all invented placeholders and
-must be replaced before anyone points a domain at this.
+Two more are deliberately left blank rather than guessed:
+
+- **`business.founded`** — directory listings say the shop started in 1987, but
+  the company's own copy has read "in business 30 years" for a while. Those
+  disagree, so no founding year is published at all. Get the real one; an
+  accurate "since 1987" is a strong trust signal, and a wrong one is worse than
+  silence.
+- **`business.licenseNumber`** — the Suffolk County home improvement licence.
+  Once it is filled in, the footer shows it automatically, and you can add
+  "Licensed & insured" to the trust strip on the home page.
 
 ---
 
@@ -49,9 +63,10 @@ There are no dependencies to install. The build is one Node script.
 
 These are in rough order of how much they matter.
 
-**1. Fill in the real details.** Open `site.config.json` and replace every
-`TODO:`. The phone, address, and hours especially — Google cross-checks them
-against your Google Business Profile, and mismatched details hurt ranking.
+**1. Verify the contact details.** Open `site.config.json` and confirm the
+phone, address, and hours with the shop. Google cross-checks them against the
+Google Business Profile, and mismatched details hurt local ranking. Note the
+address includes **Ste B** — confirm that is right.
 
 **2. Claim the Google Business Profile.** This matters more for getting found
 locally than the entire website does. Go to
@@ -60,8 +75,9 @@ listing, and make the name, address, and phone character-for-character
 identical to `site.config.json`. Then paste the profile and review links into
 `business.links`.
 
-**3. Add real project photos.** Drop them in `src/assets/img/gallery/` and
-list them under `gallery.items` in the config:
+**3. Add real project photos.** The Facebook page already has project shots —
+pulling the best dozen across is the highest-value change available. Drop them
+in `src/assets/img/gallery/` and list them under `gallery.items`:
 
 ```json
 { "src": "kitchen-southampton-01.jpg", "alt": "White marble waterfall island in a Southampton kitchen", "caption": "Calacatta island, Southampton" }
@@ -79,9 +95,13 @@ lead is lost — but that is a worse experience and some people will drop off.
 **5. Turn on GitHub Pages.** Settings → Pages → Source: **GitHub Actions**.
 Every push to `main` deploys automatically.
 
-**6. Point a domain at it.** Buy `stylemarbleandtile.com` (or similar), add a
-`CNAME` file at the repo root containing just the domain, and set the DNS
-records GitHub gives you. Then update `site.url` in the config.
+**6. Point a domain at it.** Until then the site lives at
+`https://ckujawa1103.github.io/Style-Marble-and-Tile/`. Buy
+`stylemarbleandtile.com` (or similar), add a `CNAME` file at the repo root
+containing just the domain, and set the DNS records GitHub gives you. Then in
+`site.config.json` set `site.url` to `https://stylemarbleandtile.com` and
+`site.basePath` to `""` — the second part matters, or every link on the site
+will keep pointing at the old subfolder.
 
 **7. Submit the sitemap.** Once live, add the site to
 [Google Search Console](https://search.google.com/search-console) and submit
@@ -97,12 +117,17 @@ testimonials.** Fake reviews are illegal under the FTC's rule on consumer
 reviews (16 CFR Part 465), which carries per-violation penalties, and Google
 removes business listings for them.
 
-The way to fill that section is to ask. After a job wraps, text the customer
-the Google review link (`business.links.googleReview`) while the finished
-kitchen is still in front of them — that single habit outperforms everything
-else on this list for local ranking. As real reviews come in, copy them into
-the config and they render on the site *and* feed the star ratings in search
-results.
+There are already real 5-star reviews on
+[Yelp](https://www.yelp.com/biz/style-marble-and-tile-corp-hampton-bays) and
+Angi. Copy those across verbatim, with the reviewer's name as it appears and
+`"source": "Yelp"`, and they will render on the site.
+
+Going forward, the way to fill that section is to ask. After a job wraps, text
+the customer the Google review link (`business.links.googleReview`) while the
+finished kitchen is still in front of them — that single habit outperforms
+everything else on this list for local ranking. As reviews come in, copy them
+into the config and they feed both the reviews page and the star ratings that
+show up in search results.
 
 ---
 

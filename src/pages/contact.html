@@ -41,8 +41,10 @@
           </div>
 
           <div class="field">
-            <label for="town">Town</label>
-            <input id="town" name="town" type="text" autocomplete="address-level2" placeholder="Hampton Bays, Southampton, …">
+            <label for="where">Where is the job?</label>
+            <input id="where" name="where" type="text" autocomplete="street-address"
+                   placeholder="Street address, or just the town">
+            <p class="field-hint">A street address helps us schedule the visit, but the town is enough to start.</p>
           </div>
 
           <fieldset class="field">
@@ -91,9 +93,9 @@
         </div>
 
         <div class="info-card">
-          <h2>Service area</h2>
+          <h2>Material we carry</h2>
           <ul class="area-list">
-            {{{ html.areaList }}}
+            {{{ html.materials }}}
           </ul>
         </div>
       </aside>
