@@ -254,11 +254,7 @@
     },
     {
       "q": "Do you sell tile, or only install it?",
-      "a": "Both. You can buy material from us, have us install material you bought elsewhere, or do both together."
-    },
-    {
-      "q": "Can you fabricate a slab I bought somewhere else?",
-      "a": "Yes. We will fabricate and install a slab you have already bought, and we can also walk the slab yards with you and help you pick one."
+      "a": "Both. We supply the tile as well as installing it, so you can buy the material from us and have us set it."
     },
     {
       "q": "What is the difference between marble, quartzite, and quartz?",
